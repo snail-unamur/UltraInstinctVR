@@ -69,7 +69,9 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\BooleanToggleVisualsController.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\Logs.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\RayAttachModifier.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\Head.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\Gaze.cs" />
     <Compile Include="Assets\Scripts\Interaction\Teleportation\TeleportPlayer.cs" />
     <Compile Include="Assets\Scripts\Effector\OutsideSceneEffector.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\MouseOperation.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Assets\VRTemplateAssets\Scripts\LaunchProjectile.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRGreed.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\HandSubsystemManager.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\Hand.cs" />
     <Compile Include="Assets\Scripts\Utils\GenerateReport.cs" />
     <Compile Include="Assets\Scripts\Effector\InObjectSceneEffector.cs" />
     <Compile Include="Assets\Scripts\Effector\ObjectSelectionEffector.cs" />
@@ -98,7 +101,9 @@
     <Compile Include="Assets\Scripts\Interaction\Teleportation\SizeScene.cs" />
     <Compile Include="Assets\Scripts\Utils\ParentController.cs" />
     <Compile Include="Assets\Scripts\ScriptsReplay\TeleportReplay.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\Modalities.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRMovementHandler.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\Controller.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\StepManager.cs" />
     <Compile Include="Assets\Scripts\Sensors\TeleportationSensor.cs" />
     <Compile Include="Assets\Scripts\Interaction\GameObjectMovement\Collision.cs" />
