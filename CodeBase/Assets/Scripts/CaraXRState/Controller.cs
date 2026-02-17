@@ -28,8 +28,45 @@ public class Controller : Modalities
     public InteractionState uiPressInteractionState;
 
 
+    public virtual void ClickButtonA(GameObject obj)
+    {
+        // Logic to simulate clicking button A on the controller
+    }
 
+    public virtual void ClickButtonB(GameObject obj)
+    {
+        // Logic to simulate clicking button B on the controller
+    }
 
+    public virtual void ClickTrigger(GameObject obj)
+    {
+        // Logic to simulate clicking the trigger on the controller
+    }
+    
+    public virtual void ClickGrip(GameObject obj)
+    {
+        // Logic to simulate clicking the grip on the controller
+    }
+
+    public virtual void ClickButtonX(GameObject obj)
+    {
+        // Logic to simulate clicking button X on the controller
+    }
+
+    public virtual void ClickButtonY(GameObject obj)
+    {
+        // Logic to simulate clicking button Y on the controller
+    }
+
+    public virtual void ClickButtonMenu(GameObject obj)
+    {
+        // Logic to simulate clicking the menu button on the controller
+    }
+
+    public virtual void ClickButtonOption(GameObject obj)
+    {
+        // Logic to simulate clicking the option button on the controller
+    }
 
 
 }

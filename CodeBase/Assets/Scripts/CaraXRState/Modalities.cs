@@ -2,6 +2,8 @@ using log4net.Util;
 using System;
 using System.Collections.Generic;
 using TMPro;
+using System.Reflection;
+
 using Unity.Mathematics;
 using Unity.XR.CoreUtils;
 using UnityEngine;
@@ -131,32 +133,34 @@ public class Modalities
     }
 
 
-    //  Method for interactions
 
-    public object initializeInteraction(GameObject gameobject)
-    {
-        // Initialize interaction logic here
-        return null;
-    }
-
-
-    public object doInteraction(GameObject gameobject)
-    {
-        // Perform interaction logic here
-        return null;
-    }
-
-
-    public object combineInteractions()
-    {
-        // Combine interactions logic here
-        return null;
-    }
 
     public void modifyParameters(System.Object parameters, string parameterName, object newValue)
     {
-        // Modify parameters logic here
+        if (parameters == null) return;
+
+        Type type = parameters.GetType();
+
+        // Cherche un FIELD (variable)
+        FieldInfo field = type.GetField(parameterName,
+            BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        if (field != null)
+        {
+            field.SetValue(parameters, newValue);
+            return;
+        }
+
+        // Cherche une PROPERTY
+        PropertyInfo property = type.GetProperty(parameterName,
+            BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        if (property != null && property.CanWrite)
+        {
+            property.SetValue(parameters, newValue);
+        }
     }
+
 
     public void moveObject(GameObject obj, Vector3 firstrange, Vector3 lastrange)
     {
@@ -171,7 +175,7 @@ public class Modalities
 
     public void rotateObject(GameObject obj, Quaternion newRotation)
     {
-        objectToRotate = obj;
+        this.gameObject = obj;
         targetRotation = newRotation;
         isRotating = true;
     }
