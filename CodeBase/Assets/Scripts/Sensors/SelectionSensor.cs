@@ -29,7 +29,7 @@ public class SelectionSensor : AInUnityStepSensor
     private SimpleDictionary eventContext = new SimpleDictionary();
 
     public SelectionSensor(Xareus.Scenarios.Event @event,
-        Dictionary<string, Xareus.Scenarios.Parameter> nameValueListMap, // Corriger le type ici
+        Dictionary<string, Xareus.Scenarios.Parameter> nameValueListMap,
         IContext externalContext, 
         IContext scenarioContext, 
         IContext sequenceContext)
@@ -58,7 +58,7 @@ public class SelectionSensor : AInUnityStepSensor
 
     public override Result UnityStepSensorCheck()
     {
-        Vector3 currentPosition = GetPlayerPosition();  // Utilise la position du cube
+        Vector3 currentPosition = GetPlayerPosition(); 
 
         if (Vector3.Distance(currentPosition, lastPosition) > teleportDistanceThreshold)
         {

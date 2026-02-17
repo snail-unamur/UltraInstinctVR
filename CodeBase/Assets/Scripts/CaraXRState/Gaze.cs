@@ -18,4 +18,10 @@ public class Gaze : Head
     public static InputFeatureUsage<Quaternion> gazeRotation = new InputFeatureUsage<Quaternion>("gazeRotation");
 
 
+    public float distanceGaze(GameObject gaze)
+    {
+        return Vector3.Distance(gaze.transform.position, this.gameObject.transform.position);
+    }
+
+
 }

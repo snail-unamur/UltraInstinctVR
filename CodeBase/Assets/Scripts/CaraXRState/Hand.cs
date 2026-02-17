@@ -22,4 +22,20 @@ public class Hand : Modalities
     public Vector3 leftHandLocalRotation;
 
     public bool invertAxisForRightHand;
+
+
+
+
+    public void GripObject(GameObject obj)
+    {
+        // Logic to grip the object using the hand
+    }
+
+
+    public void ReleaseObject(GameObject obj)
+    {
+        // Logic to release the object from the hand
+    }
+
+
 }

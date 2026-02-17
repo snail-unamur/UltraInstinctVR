@@ -1,33 +1,38 @@
+using log4net.Util;
 using System;
 using System.Collections.Generic;
+using TMPro;
+using Unity.Mathematics;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
-using static UnityEngine.XR.Interaction.Toolkit.Inputs.Interactions.SectorInteraction;
 using UnityEngine.XR.OpenXR.Features;
+using static UnityEngine.XR.Interaction.Toolkit.Inputs.Interactions.SectorInteraction;
 public class Modalities
 {
 
-    public float posX;
-    public float posY;
-    public float posZ;
-    public float rotX;
-    public float rotY;
-    public float rotZ;
+    // parameters linkde to movement and position of the object
+    public Vector3 position;
+    public Quaternion rotation;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float rotationSpeed = 180f;
+    private Vector3 targetPosition;
+    private Quaternion targetRotation;
+
+    private bool isMoving = false;
+    private bool isRotating = false;
+
+    public GameObject gameObject;
+
+
 
     public SerializableGuid savedAnchorGuid;
 
     public ARAnchor anchor;
 
-
-
-    // GestureRecognizer.cs
-    Func<InputSystem.EnhancedTouch.Touch, InputSystem.EnhancedTouch.Touch, T> s_CreateGestureFromTwoEnhancedTouchFunction;
-
-    static Action<T, InputSystem.EnhancedTouch.Touch> s_ReinitializeGestureFromOneEnhancedTouchFunction;
-    static Action<T, InputSystem.EnhancedTouch.Touch, InputSystem.EnhancedTouch.Touch> s_ReinitializeGestureFromTwoEnhancedTouchFunction;
 
 
     // FallbackComposite.cs
@@ -39,14 +44,14 @@ public class Modalities
     public int second;
     //[InputControl(layout = "Vector3")]
     public int third;
-    
+
     //[InputControl(layout = "Quaternion")] 
     public int Quaternionfirst;
     //[InputControl(layout = "Quaternion")]  
     public int QuaternionSecond;
     //[InputControl(layout = "Quaternion")] 
     public int Quarternionthird;
-    
+
     //[InputControl(layout = "Integer")] 
     public int IntegerFirst;
     //[InputControl(layout = "Integer")] 
@@ -71,7 +76,7 @@ public class Modalities
 
     //XRManagerSettings.cs
 
-    [HideInInspector] [SerializeField] bool m_RequiresSettingsUpdate = false;
+    [HideInInspector][SerializeField] bool m_RequiresSettingsUpdate = false;
 
     // OpenXRFeature.cs
 
@@ -112,5 +117,94 @@ public class Modalities
 
         /// <summary>Optional OpenXR user paths <see cref="UserPaths"/></summary>
         public List<string> userPaths;
+    }
+
+
+
+
+    // Constructor
+    public Modalities()
+    {
+        this.position = this.gameObject.transform.position;
+        this.rotation = this.gameObject.transform.rotation;
+
+    }
+
+
+    //  Method for interactions
+
+    public object initializeInteraction(GameObject gameobject)
+    {
+        // Initialize interaction logic here
+        return null;
+    }
+
+
+    public object doInteraction(GameObject gameobject)
+    {
+        // Perform interaction logic here
+        return null;
+    }
+
+
+    public object combineInteractions()
+    {
+        // Combine interactions logic here
+        return null;
+    }
+
+    public void modifyParameters(System.Object parameters, string parameterName, object newValue)
+    {
+        // Modify parameters logic here
+    }
+
+    public void moveObject(GameObject obj, Vector3 firstrange, Vector3 lastrange)
+    {
+        // Move object logic here
+    }
+
+    public void moveObjectExactly(Vector3 newPosition)
+    {
+        targetPosition = newPosition;
+        isMoving = true;
+    }
+
+    public void rotateObject(GameObject obj, Quaternion newRotation)
+    {
+        objectToRotate = obj;
+        targetRotation = newRotation;
+        isRotating = true;
+    }
+
+    private void Update()
+    {
+        // --- MOVE ---
+        if (isMoving)
+        {
+            this.gameObject.transform.position = Vector3.MoveTowards(
+            this.gameObject.transform.position,
+                targetPosition,
+                moveSpeed * Time.deltaTime
+            );
+
+            if (this.gameObject.transform.position == targetPosition)
+                isMoving = false;
+        }
+
+        // --- ROTATE ---
+        if (isRotating && this.gameObject != null)
+        {
+            this.gameObject.transform.rotation = Quaternion.RotateTowards(
+                this.gameObject.transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime
+            );
+
+            if (Quaternion.Angle(this.gameObject.transform.rotation, targetRotation) < 0.1f)
+            {
+                this.gameObject.transform.rotation = targetRotation;
+                isRotating = false;
+            }
+        }
     }
 }
