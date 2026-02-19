@@ -164,7 +164,7 @@ public class Modalities
 
     public void moveObject(GameObject obj, Vector3 firstrange, Vector3 lastrange)
     {
-        // Move object logic here
+        //
     }
 
     public void moveObjectExactly(Vector3 newPosition)

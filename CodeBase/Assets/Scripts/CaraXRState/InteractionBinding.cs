@@ -4,9 +4,14 @@ public class InteractionBinding
 {
 
 
+    private Modalities[] modalities;
+    private Object actionToBeEffected;
+
+
     // General methods for modalities
-    public virtual void Using()
+    public virtual void Using(Modalities[] modalities)
     {
+        this.modalities = modalities;
 
     }
 
@@ -16,9 +21,9 @@ public class InteractionBinding
     }
 
 
-    public virtual void ToProduce()
+    public virtual void ToProduce(Object actionToBeEffected)
     {
-
+        this.actionToBeEffected = actionToBeEffected;
     }
 
 

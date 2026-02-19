@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.Rendering;
 using UnityEngine.XR.Hands;
 using static UnityEngine.XR.Hands.XRHandSubsystem;
 
@@ -26,16 +29,65 @@ public class Hand : Modalities
 
 
 
-    public void GripObject(GameObject obj)
+    public virtual void pokeObject(GameObject obj)
     {
-        // Logic to grip the object using the hand
+        InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(Key.N));
+
+        InputSystem.Update();
+
+
     }
 
 
-    public void ReleaseObject(GameObject obj)
+    public virtual void GrabObject(GameObject obj)
     {
-        // Logic to release the object from the hand
+        InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(Key.K));
+
+        InputSystem.Update();
+
     }
 
+
+    public virtual void UngrabObject(GameObject obj)
+    {
+        InputSystem.QueueStateEvent(
+            Keyboard.current,
+            new KeyboardState()
+        );
+
+        InputSystem.Update();
+
+    }
+
+
+    public virtual void pinchObject(GameObject obj)
+    {
+        InputSystem.QueueStateEvent(Keyboard.current,new KeyboardState(Key.M));
+        InputSystem.Update();
+
+
+    }
+    public virtual void unpinchObject(GameObject obj)
+     {
+        InputSystem.QueueStateEvent(Keyboard.current,new KeyboardState());
+        InputSystem.Update();
+
+    }
+
+    public virtual void OpenHand(GameObject obj)
+    {
+
+        InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(Key.O));
+        InputSystem.Update();
+
+
+    }
+
+    public virtual void fistHand(GameObject obj)
+    {
+        InputSystem.QueueStateEvent(Keyboard.current, new KeyboardState(Key.P));
+        InputSystem.Update();
+
+    }
 
 }
