@@ -26,6 +26,8 @@ public class VRTest : MonoBehaviour
     protected Vector3[] turnOpts = new Vector3[6];
     protected List<Vector3> moves = new List<Vector3>();
     protected List<Vector3> turns = new List<Vector3>();
+    protected float triggerlimit = 5f;
+
 
     // Click logic
     float clickStayLength = 2f;
