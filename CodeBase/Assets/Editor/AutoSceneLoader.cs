@@ -19,7 +19,7 @@ public class AutoPlayOnStart
 
         EnableCoverage();
 
-        string scenePath = "Assets/Scenes/SampleScene.unity";
+        string scenePath = "Assets/Scenes/None.unity";
 
         if (!EditorSceneManager.GetActiveScene().path.Equals(scenePath))
         {
@@ -36,9 +36,6 @@ public class AutoPlayOnStart
     {
         // ✅ API correcte
         Coverage.enabled = true;
-
-
-
         Debug.Log("Code Coverage enabled.");
     }
 }

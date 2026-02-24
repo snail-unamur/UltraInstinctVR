@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2/23/2026 - 4:17:18 PM |
+| Generated on: | 2/24/2026 - 12:12:46 PM |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 45 |
@@ -9,7 +9,7 @@
 | Covered lines: | 1179 |
 | Uncovered lines: | 997 |
 | Coverable lines: | 2176 |
-| Total lines: | 4935 |
+| Total lines: | 4991 |
 | Line coverage: | 54.1% (1179 of 2176) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,12 +19,12 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Assembly-CSharp**|**1179**|**997**|**2176**|**5077**|**54.1%**|**0**|**0**|****|**175**|**298**|**58.7%**|
+|**Assembly-CSharp**|**1179**|**997**|**2176**|**5133**|**54.1%**|**0**|**0**|****|**175**|**298**|**58.7%**|
 |ChildBahaviorSpace.ChildBehavior|13|3|16|62|81.2%|0|0||3|3|100%|
 |ColissionEffectorSpace.CollisionEffector|19|5|24|96|79.1%|0|0||3|3|100%|
 |Collision|0|81|81|114|0%|0|0||0|7|0%|
 |CoverageToCSV|0|31|31|54|0%|0|0||0|1|0%|
-|GenerateReportSpace.GenerateReport|0|14|14|34|0%|0|0||0|2|0%|
+|GenerateReportSpace.GenerateReport|0|14|14|90|0%|0|0||0|2|0%|
 |GetStartTimeSpace.GetStartTime|0|16|16|37|0%|0|0||0|5|0%|
 |InObjectSceneEffectorSpace.InObjectSceneEffector|51|17|68|165|75%|0|0||7|7|100%|
 |LogAnalyzer|87|3|90|142|96.6%|0|0||3|3|100%|
