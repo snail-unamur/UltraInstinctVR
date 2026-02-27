@@ -12,8 +12,8 @@ th { background-color: #f2f2f2; }
 </style></head><body>
 <h1>Unity Log Analysis Report</h1>
 <h2>Summary</h2>
-<p><strong>Number of logs containing 'TestGenerated':</strong> 22</p>
-<p><strong>Number of logs containing 'TestFailed':</strong> 14</p>
+<p><strong>Number of logs containing 'TestGenerated':</strong> 23</p>
+<p><strong>Number of logs containing 'TestFailed':</strong> 15</p>
 <p><strong>Number of logs containing 'TestPassed':</strong> 8</p>
 <h2>ORACLE Test Results</h2>
 <table>
@@ -21,39 +21,41 @@ th { background-color: #f2f2f2; }
 <tr><td>CanTeleport</td><td>4</td><td>4</td><td>0</td></tr>
 <tr><td>OutsideSceneTeleportation</td><td>5</td><td>0</td><td>5</td></tr>
 <tr><td>InObjectScene</td><td>9</td><td>0</td><td>9</td></tr>
-<tr><td>CollisionDetection</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>CollisionDetection</td><td>4</td><td>3</td><td>1</td></tr>
 <tr><td>MoveObjectToOrigin</td><td>2</td><td>1</td><td>0</td></tr>
 </table>
 <h2>Logs for ORACLE: CanTeleport</h2>
 <h3 style='color: green;'>Tests succeed</h3>
-<div class='log-box log-passed'>[2/27/2026 11:40:42 AM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.00, 0.00, 0.00)</div>
-<div class='log-box log-passed'>[2/27/2026 11:40:43 AM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-6.94, 1.39, -2.57)</div>
-<div class='log-box log-passed'>[2/27/2026 11:40:44 AM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-5.71, 1.39, 8.46)</div>
-<div class='log-box log-passed'>[2/27/2026 11:40:45 AM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.94, 1.39, 9.35)</div>
+<div class='log-box log-passed'>[2/27/2026 2:17:24 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.00, 0.00, 0.00)</div>
+<div class='log-box log-passed'>[2/27/2026 2:17:25 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-9.64, 1.39, -6.89)</div>
+<div class='log-box log-passed'>[2/27/2026 2:17:26 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-5.29, 1.39, 7.26)</div>
+<div class='log-box log-passed'>[2/27/2026 2:17:27 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.39, 1.39, -2.21)</div>
 <h2>Logs for ORACLE: OutsideSceneTeleportation</h2>
 <h3 style='color: red;'>Tests failed</h3>
-<div class='log-box log-failed'>[2/27/2026 11:40:56 AM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3107159.00, 1.57, 1339386.00)</div>
-<div class='log-box log-failed'>[2/27/2026 11:40:57 AM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2829340.00, 1.57, 384874.60)</div>
-<div class='log-box log-failed'>[2/27/2026 11:40:58 AM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1495481.00, 1.57, -2367296.00)</div>
-<div class='log-box log-failed'>[2/27/2026 11:40:59 AM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2023098.00, 1.57, -2066543.00)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:00 AM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1712746.00, 1.57, 448700.30)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:38 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3153477.00, 1.57, -724529.20)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:39 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1855450.00, 1.57, -2529705.00)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:40 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1617367.00, 1.57, -2885394.00)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:41 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1976012.00, 1.57, -1427792.00)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:42 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-206399.70, 1.57, -3529487.00)</div>
 <h2>Logs for ORACLE: InObjectScene</h2>
 <h3 style='color: red;'>Tests failed</h3>
-<div class='log-box log-failed'>[2/27/2026 11:41:02 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.15, 1.16, -2.98)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:03 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 0.99, -2.98)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:04 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.19, -2.98)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:05 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.61, 0.95, -0.16)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:06 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (0.44, 0.93, -1.83)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:07 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.40, -2.98)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:08 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (3.25, 2.81, 0.50)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:09 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (-0.45, 0.93, -2.35)</div>
-<div class='log-box log-failed'>[2/27/2026 11:41:10 AM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.49, 0.71, -2.13)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:44 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (0.44, 0.93, -1.83)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:45 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.49, 0.71, -2.13)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:46 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 0.99, -2.98)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:47 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.50, 1.60, -2.98)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:48 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.40, -2.98)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:49 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.19, -2.98)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:50 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (-0.45, 0.93, -2.35)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:51 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.61, 0.95, -0.16)</div>
+<div class='log-box log-failed'>[2/27/2026 2:17:52 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (3.25, 2.81, 0.50)</div>
 <h2>Logs for ORACLE: CollisionDetection</h2>
 <h3 style='color: green;'>Tests succeed</h3>
-<div class='log-box log-passed'>[2/27/2026 11:41:33 AM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Cylinder_COL at: (2.15, 1.16, -2.98)</div>
-<div class='log-box log-passed'>[2/27/2026 11:41:39 AM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Blaster_COL at: (2.61, 0.95, -0.16)</div>
-<div class='log-box log-passed'>[2/27/2026 11:41:41 AM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Spatial Panel Manipulator Model at: (0.44, 0.93, -1.83)</div>
+<div class='log-box log-passed'>[2/27/2026 2:18:17 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Arch_Interactable at: (2.49, 0.71, -2.13)</div>
+<div class='log-box log-passed'>[2/27/2026 2:18:19 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Mesh_COL at: (2.51, 0.99, -2.98)</div>
+<div class='log-box log-passed'>[2/27/2026 2:18:21 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Mesh_COL at: (2.50, 1.60, -2.98)</div>
+<h3 style='color: red;'>Tests failed</h3>
+<div class='log-box log-failed'>[2/27/2026 2:18:15 PM] Error: ORACLE CollisionDetection - TestFailed - No valid collision detected at: (0.44, 0.93, -1.83)</div>
 <h2>Logs for ORACLE: MoveObjectToOrigin</h2>
 <h3 style='color: green;'>Tests succeed</h3>
-<div class='log-box log-passed'>[2/27/2026 11:41:41 AM] Log: ORACLE MoveObjectToOrigin - TestPassed - Sphere Interactable was moved to the origin.</div>
+<div class='log-box log-passed'>[2/27/2026 2:18:23 PM] Log: ORACLE MoveObjectToOrigin - TestPassed - Blaster was moved to the origin.</div>
 </body></html>

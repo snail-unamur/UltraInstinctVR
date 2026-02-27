@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2/27/2026 - 11:43:50 AM |
+| Generated on: | 2/27/2026 - 1:45:39 PM |
 | Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 47 |
 | Files: | 46 |
-| Covered lines: | 1238 |
-| Uncovered lines: | 1039 |
+| Covered lines: | 1244 |
+| Uncovered lines: | 1033 |
 | Coverable lines: | 2277 |
 | Total lines: | 5110 |
-| Line coverage: | 54.3% (1238 of 2277) |
+| Line coverage: | 54.6% (1244 of 2277) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 185 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Assembly-CSharp**|**1238**|**1039**|**2277**|**5252**|**54.3%**|**0**|**0**|****|**185**|**312**|**59.2%**|
+|**Assembly-CSharp**|**1244**|**1033**|**2277**|**5252**|**54.6%**|**0**|**0**|****|**185**|**312**|**59.2%**|
 |ChildBahaviorSpace.ChildBehavior|13|3|16|62|81.2%|0|0||3|3|100%|
 |ColissionEffectorSpace.CollisionEffector|19|5|24|96|79.1%|0|0||3|3|100%|
 |Collision|0|81|81|114|0%|0|0||0|7|0%|
@@ -31,7 +31,7 @@
 |InObjectSceneEffectorSpace.InObjectSceneEffector|52|16|68|165|76.4%|0|0||7|7|100%|
 |LogAnalyzer|87|3|90|142|96.6%|0|0||3|3|100%|
 |LogPerformance|49|10|59|80|83%|0|0||8|10|80%|
-|LogToFile|25|12|37|63|67.5%|0|0||2|3|66.6%|
+|LogToFile|31|6|37|63|83.7%|0|0||2|3|66.6%|
 |MouseOperations|0|19|19|73|0%|0|0||0|5|0%|
 |MoveObjectToOriginEffectorSpace.MoveObjectToOriginEffector|54|26|80|215|67.5%|0|0||10|10|100%|
 |ObjectSelectionEffector|0|37|37|89|0%|0|0||0|3|0%|
