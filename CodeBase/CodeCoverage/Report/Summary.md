@@ -1,35 +1,36 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2/25/2026 - 1:26:18 PM |
+| Generated on: | 2/27/2026 - 11:43:50 AM |
 | Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 46 |
-| Files: | 45 |
-| Covered lines: | 1204 |
-| Uncovered lines: | 1043 |
-| Coverable lines: | 2247 |
-| Total lines: | 5074 |
-| Line coverage: | 53.5% (1204 of 2247) |
+| Classes: | 47 |
+| Files: | 46 |
+| Covered lines: | 1238 |
+| Uncovered lines: | 1039 |
+| Coverable lines: | 2277 |
+| Total lines: | 5110 |
+| Line coverage: | 54.3% (1238 of 2277) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 175 |
-| Total methods: | 304 |
-| Method coverage: | 57.5% (175 of 304) |
+| Covered methods: | 185 |
+| Total methods: | 312 |
+| Method coverage: | 59.2% (185 of 312) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Assembly-CSharp**|**1204**|**1043**|**2247**|**5216**|**53.5%**|**0**|**0**|****|**175**|**304**|**57.5%**|
+|**Assembly-CSharp**|**1238**|**1039**|**2277**|**5252**|**54.3%**|**0**|**0**|****|**185**|**312**|**59.2%**|
 |ChildBahaviorSpace.ChildBehavior|13|3|16|62|81.2%|0|0||3|3|100%|
 |ColissionEffectorSpace.CollisionEffector|19|5|24|96|79.1%|0|0||3|3|100%|
 |Collision|0|81|81|114|0%|0|0||0|7|0%|
 |CountInteractablesObject|9|0|9|26|100%|0|0||2|2|100%|
 |CoverageToCSV|0|31|31|54|0%|0|0||0|1|0%|
 |GenerateReportSpace.GenerateReport|49|27|76|147|64.4%|0|0||5|6|83.3%|
-|GetStartTimeSpace.GetStartTime|0|16|16|37|0%|0|0||0|5|0%|
+|GetCPUTime|8|5|13|35|61.5%|0|0||2|3|66.6%|
+|GetStartTimeSpace.GetStartTime|10|6|16|37|62.5%|0|0||4|5|80%|
 |InObjectSceneEffectorSpace.InObjectSceneEffector|52|16|68|165|76.4%|0|0||7|7|100%|
 |LogAnalyzer|87|3|90|142|96.6%|0|0||3|3|100%|
-|LogPerformance|33|9|42|79|78.5%|0|0||4|5|80%|
+|LogPerformance|49|10|59|80|83%|0|0||8|10|80%|
 |LogToFile|25|12|37|63|67.5%|0|0||2|3|66.6%|
 |MouseOperations|0|19|19|73|0%|0|0||0|5|0%|
 |MoveObjectToOriginEffectorSpace.MoveObjectToOriginEffector|54|26|80|215|67.5%|0|0||10|10|100%|
