@@ -5,51 +5,53 @@ using UnityEngine;
 public class LogToFile : MonoBehaviour
 {
     private string logFilePath;
-    private StreamWriter writer;
-    private static readonly object fileLock = new object();
 
     void Awake()
     {
-        string projectRoot = Directory.GetParent(Application.dataPath).FullName;
-        logFilePath = Path.Combine(projectRoot, "Logs", "game_logs.txt");
+        // Définir le chemin du fichier log (dans Assets/Scripts/)
+        logFilePath = Path.Combine(Application.dataPath, "Scripts", "game_logs.txt");
 
+        // Vérifier si le dossier existe, sinon le créer
         string directoryPath = Path.GetDirectoryName(logFilePath);
         if (!Directory.Exists(directoryPath))
+        {
             Directory.CreateDirectory(directoryPath);
+        }
 
-        // ouvre UNE SEULE FOIS le writer
-        writer = new StreamWriter(
-            new FileStream(
-                logFilePath,
-                FileMode.Append,
-                FileAccess.ReadWrite,
-                FileShare.ReadWrite
-            )
-        );
+        // Si le fichier existe déjà, on le vide pour commencer une nouvelle session
+        if (File.Exists(logFilePath))
+        {
+            File.WriteAllText(logFilePath, string.Empty);  // Vide le fichier
+        }
+        else
+        {
+            // Si le fichier n'existe pas, on le crée avec un message initial
+            using (StreamWriter writer = File.CreateText(logFilePath))
+            {
+                writer.WriteLine("=== Nouvelle Session ===");
+            }
+        }
 
-        writer.AutoFlush = true;
+        // Ajouter une nouvelle entrée au début du fichier
+        using (StreamWriter writer = new StreamWriter(logFilePath, true))
+        {
+            writer.WriteLine("\n=== Nouvelle Session ===");
+        }
 
-        writer.WriteLine("\n=== New Session ===");
-
+        // Écouter les logs de la console
         Application.logMessageReceived += LogToFileMethod;
     }
 
     void OnDestroy()
     {
         Application.logMessageReceived -= LogToFileMethod;
-
-        writer?.Close();
-        writer?.Dispose();
     }
 
     private void LogToFileMethod(string logString, string stackTrace, LogType type)
     {
-        lock (fileLock)
+        using (StreamWriter writer = new StreamWriter(logFilePath, true))
         {
-            if (writer == null) return;
-
             writer.WriteLine($"[{DateTime.Now}] {type}: {logString}");
-
             if (type == LogType.Exception || type == LogType.Error)
             {
                 writer.WriteLine(stackTrace);

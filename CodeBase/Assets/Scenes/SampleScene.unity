@@ -17975,6 +17975,18 @@ PrefabInstance:
       propertyPath: 'childrenPrefabs.Array.data[7]'
       value: 
       objectReference: {fileID: 7262856367770688548}
+    - target: {fileID: 4038651723170197978, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
+      propertyPath: teleportCount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133834861185714665, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
+      propertyPath: duration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997517384217828753, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
+      propertyPath: teleportCount
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7139942935795818343, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: m_Enabled
       value: 0

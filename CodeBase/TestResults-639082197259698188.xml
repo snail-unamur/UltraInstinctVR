@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-03-04 10:15:10Z" end-time="2026-03-04 10:15:14Z" duration="4.6744125">
+  <test-suite type="TestSuite" id="1007" name="My project" fullname="My project" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-03-04 10:15:10Z" end-time="2026-03-04 10:15:14Z" duration="4.674413" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1003" name="Tests.dll" fullname="C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-03-04 10:15:10Z" end-time="2026-03-04 10:15:14Z" duration="4.647051" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23192" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1001" name="LaunchTest" fullname="LaunchTest" classname="LaunchTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-03-04 10:15:10Z" end-time="2026-03-04 10:15:14Z" duration="4.620337" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1002" name="LaunchTestWithEnumeratorPasses" fullname="LaunchTest.LaunchTestWithEnumeratorPasses" methodname="LaunchTestWithEnumeratorPasses" classname="LaunchTest" runstate="Runnable" seed="1066006595" result="Failed" start-time="2026-03-04 10:15:10Z" end-time="2026-03-04 10:15:14Z" duration="4.580746" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <failure>
+            <message><![CDATA[Unhandled log message: '[Exception] ArgumentException: Append access can be requested only in write-only mode.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+            <stack-trace><![CDATA[System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <73ac12a12f9a4ebca156b41ddce95fbe>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) (at <73ac12a12f9a4ebca156b41ddce95fbe>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+LogToFile.Awake () (at Assets/Scripts/Interaction/VRTest/Logs.cs:21)
+
+]]></stack-trace>
+          </failure>
+          <output><![CDATA[The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object '') is missing!
+The referenced script on this Behaviour (Game Object 'Select GameObject') is missing!
+ArgumentException: Append access can be requested only in write-only mode.
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <73ac12a12f9a4ebca156b41ddce95fbe>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) (at <73ac12a12f9a4ebca156b41ddce95fbe>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+LogToFile.Awake () (at Assets/Scripts/Interaction/VRTest/Logs.cs:21)
+
+Could not find a device that supports eye tracking on Awake. Gaze Interactor (UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.GazeInputManager) has subscribed to device connected events and will activate the GameObject when an eye tracking device is connected.
+Scenario files used in the scene SampleScene and added to the build: 
+Assets/Oracle_InObjectScene.xml
+Assets/Oracle_Colission.xml
+Assets/Oracle_MoveObjectToOrigin.xml
+Assets/Oracle_Teleportation.xml
+Assets/Oracle_OutSceneTeleportation.xml
+Assets/Oracle_Selection.xml
+Mesh 'Plane' has more materials (2) than submeshes (1)
+🚀 Initialisation of the test suite
+📢 StartNextChild() called - Actual Index : 0
+No Camera Floor Offset GameObject specified for XR Origin, using attached GameObject.
+▶ Activation of ScanInteractableObject
+🎬 ScanInteractableObject initialised !
+➡ ScanInteractableObject begins his interaction !
+Total Interactable objects in scene: 16
+The game_logs.txt file has been cleared.
+Sphere Interactable: (3.25, 2.81, 0.50)
+Blaster: (2.61, 0.95, -0.16)
+Arch_Interactable: (2.49, 0.71, -2.13)
+Spatial Panel Manipulator Model: (0.44, 0.93, -1.83)
+Spatial Panel Manipulator UI Examples: (-0.45, 0.93, -2.35)
+Torus Interactable: (2.51, 1.19, -2.98)
+Tapered Interactable: (2.50, 1.60, -2.98)
+Tapered Interactable: (2.51, 0.99, -2.98)
+Cylinder Interactable: (2.15, 1.16, -2.98)
+Cube Interactable: (2.51, 1.40, -2.98)
+Gaze Interactor not set or missing on ScanInteractableObject (UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance). Disabling this XR Gaze Assistance component.
+Hand Tracking Subsystem not found or not running, can't subscribe to hand tracking status. Enable that feature in the OpenXR project settings and ensure OpenXR is enabled as the plug-in provider. This component will reattempt getting a reference to the subsystem each frame.
+[Code Coverage] Code Coverage results for visited sequence points were saved in C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/CodeCoverage/CodeBase-opencov/PlayMode/TestCoverageResults_0001.xml
+[Code Coverage] Code Coverage Report was generated in C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/CodeCoverage/Report
+Included Assemblies: Assembly-CSharp
+Excluded Assemblies: <Not specified>
+Included Paths: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets/**
+Excluded Paths: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Packages/**
+Saving results to: C:/Users/glongfil/AppData/LocalLow/DefaultCompany/My project\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

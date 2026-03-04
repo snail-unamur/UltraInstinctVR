@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2/27/2026 - 1:45:39 PM |
+| Generated on: | 3/4/2026 - 11:15:24 AM |
 | Parser: | MultiReportParser (5x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 47 |
 | Files: | 46 |
-| Covered lines: | 1244 |
-| Uncovered lines: | 1033 |
-| Coverable lines: | 2277 |
-| Total lines: | 5110 |
-| Line coverage: | 54.6% (1244 of 2277) |
+| Covered lines: | 1250 |
+| Uncovered lines: | 1046 |
+| Coverable lines: | 2296 |
+| Total lines: | 5104 |
+| Line coverage: | 54.4% (1250 of 2296) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 185 |
-| Total methods: | 312 |
-| Method coverage: | 59.2% (185 of 312) |
+| Covered methods: | 189 |
+| Total methods: | 317 |
+| Method coverage: | 59.6% (189 of 317) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Assembly-CSharp**|**1244**|**1033**|**2277**|**5252**|**54.6%**|**0**|**0**|****|**185**|**312**|**59.2%**|
+|**Assembly-CSharp**|**1250**|**1046**|**2296**|**5246**|**54.4%**|**0**|**0**|****|**189**|**317**|**59.6%**|
 |ChildBahaviorSpace.ChildBehavior|13|3|16|62|81.2%|0|0||3|3|100%|
 |ColissionEffectorSpace.CollisionEffector|19|5|24|96|79.1%|0|0||3|3|100%|
 |Collision|0|81|81|114|0%|0|0||0|7|0%|
@@ -31,7 +31,7 @@
 |InObjectSceneEffectorSpace.InObjectSceneEffector|52|16|68|165|76.4%|0|0||7|7|100%|
 |LogAnalyzer|87|3|90|142|96.6%|0|0||3|3|100%|
 |LogPerformance|49|10|59|80|83%|0|0||8|10|80%|
-|LogToFile|31|6|37|63|83.7%|0|0||2|3|66.6%|
+|LogToFile|28|18|46|59|60.8%|0|0||5|7|71.4%|
 |MouseOperations|0|19|19|73|0%|0|0||0|5|0%|
 |MoveObjectToOriginEffectorSpace.MoveObjectToOriginEffector|54|26|80|215|67.5%|0|0||10|10|100%|
 |ObjectSelectionEffector|0|37|37|89|0%|0|0||0|3|0%|
@@ -63,7 +63,7 @@
 |Unity.VRTemplate.XRPokeFollowAffordanceFill|38|44|82|246|46.3%|0|0||6|24|25%|
 |VRGreed|0|27|27|62|0%|0|0||0|3|0%|
 |VRGuide|115|42|157|256|73.2%|0|0||11|17|64.7%|
-|VRLoggerSpace.VRLogger|7|0|7|33|100%|0|0||1|1|100%|
+|VRLoggerSpace.VRLogger|16|1|17|31|94.1%|0|0||2|2|100%|
 |VRMovementHandler|52|2|54|127|96.2%|0|0||6|6|100%|
 |VRTest|72|26|98|227|73.4%|0|0||10|18|55.5%|
 |VRTriggerHandler|44|1|45|109|97.7%|0|0||5|5|100%|
