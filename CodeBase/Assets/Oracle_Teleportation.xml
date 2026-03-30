@@ -50,7 +50,7 @@
               <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
             </unityEditor>
           </extendedInfo>
-          <param value="1" type="System.Single,mscorlib" name="Teleport Distance Threshold">
+          <param value="0" type="System.Single,mscorlib" name="Teleport Distance Threshold">
             <extendedInfo>
               <unityEditor xmlns="">
                 <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.FloatField,Xareus.Unity.Editor" />

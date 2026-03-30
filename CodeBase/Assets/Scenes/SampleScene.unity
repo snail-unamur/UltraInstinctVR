@@ -1337,6 +1337,9 @@ MonoBehaviour:
   - Obj: {fileID: 217447823}
     idString: 027e0b93-d55e-4f1d-a58c-cdfb2a0402e5
     UFIdstring: 
+  - Obj: {fileID: 1373153107}
+    idString: 5158fcb4-79c1-4a30-ae24-32097aded909
+    UFIdstring: 
 --- !u!4 &186013245
 Transform:
   m_ObjectHideFlags: 0
@@ -10630,6 +10633,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+--- !u!1 &1373153107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8324439472033582582, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1373153106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1390846723
 GameObject:
   m_ObjectHideFlags: 0
@@ -17941,12 +17949,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: childrenPrefabs.Array.size
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: 'childrenPrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 7262856367770688548}
+      objectReference: {fileID: 217447826}
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: 'childrenPrefabs.Array.data[1]'
       value: 
@@ -17983,9 +17991,17 @@ PrefabInstance:
       propertyPath: duration
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6239159155077202989, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6997517384217828753, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: teleportCount
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064474514217102849, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7139942935795818343, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: m_Enabled
