@@ -1,26 +1,103 @@
 
 === Nouvelle Session ===
-[3/30/2026 2:47:18 PM] Log: Scenario files used in the scene SampleScene and added to the build: 
+[3/30/2026 4:02:08 PM] Log: Scenario files used in the scene SampleScene and added to the build: 
 Assets/Oracle_InObjectScene.xml
 Assets/Oracle_Colission.xml
 Assets/Oracle_MoveObjectToOrigin.xml
 Assets/Oracle_Teleportation.xml
 Assets/Oracle_OutSceneTeleportation.xml
 Assets/Oracle_Selection.xml
-[3/30/2026 2:47:18 PM] Warning: Mesh 'Plane' has more materials (2) than submeshes (1)
-[3/30/2026 2:47:18 PM] Log: [UnitySingleton] An instance of InriaTools.UnityThreadExecute is needed in the scene, so '(singleton) InriaTools.UnityThreadExecute (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
-[3/30/2026 2:47:18 PM] Log: UFSevenNetworkManager will parse the command line connect to the specified remote server
+[3/30/2026 4:02:08 PM] Warning: Mesh 'Plane' has more materials (2) than submeshes (1)
+[3/30/2026 4:02:08 PM] Log: [UnitySingleton] An instance of InriaTools.UnityThreadExecute is needed in the scene, so '(singleton) InriaTools.UnityThreadExecute (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
+[3/30/2026 4:02:08 PM] Log: UFSevenNetworkManager will parse the command line connect to the specified remote server
 	 Use --sevenserverremoteadress (or -ssra) "address[:remoteport]" to connect to the given remote server (default remoteport : 7777)
-[3/30/2026 2:47:19 PM] Log: 🚀 Initialisation of the test suite
-[3/30/2026 2:47:19 PM] Log: 📢 StartNextChild() called - Actual Index : 0
-[3/30/2026 2:47:19 PM] Log: ▶ Activation of Teleportation Outside scene
-[3/30/2026 2:47:19 PM] Log: 🎬 Teleportation Outside scene initialised !
-[3/30/2026 2:47:19 PM] Log: ➡ Teleportation Outside scene begins his interaction !
-[3/30/2026 2:47:19 PM] Log: Total Interactable objects in scene: 16
-[3/30/2026 2:47:19 PM] Log: [UnitySingleton] An instance of InriaTools.SeparateThread is needed in the scene, so '(singleton) InriaTools.SeparateThread (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
-[3/30/2026 2:47:20 PM] Warning: Hand Tracking Subsystem not found or not running, can't subscribe to hand tracking status. Enable that feature in the OpenXR project settings and ensure OpenXR is enabled as the plug-in provider. This component will reattempt getting a reference to the subsystem each frame.
-[3/30/2026 2:47:22 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:22 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (231452.50, 1.57, -1531453.00)
+[3/30/2026 4:02:08 PM] Log: 🚀 Initialisation of the test suite
+[3/30/2026 4:02:08 PM] Log: 📢 StartNextChild() called - Actual Index : 0
+[3/30/2026 4:02:08 PM] Warning: No Camera Floor Offset GameObject specified for XR Origin, using attached GameObject.
+[3/30/2026 4:02:08 PM] Log: ▶ Activation of ScanInteractableObject
+[3/30/2026 4:02:08 PM] Log: 🎬 ScanInteractableObject initialised !
+[3/30/2026 4:02:08 PM] Log: ➡ ScanInteractableObject begins his interaction !
+[3/30/2026 4:02:08 PM] Log: Total Interactable objects in scene: 16
+[3/30/2026 4:02:08 PM] Log: The game_logs.txt file has been cleared.
+[3/30/2026 4:02:08 PM] Log: Blaster: (2.61, 0.95, -0.16)
+[3/30/2026 4:02:08 PM] Log: Arch_Interactable: (2.49, 0.71, -2.13)
+[3/30/2026 4:02:08 PM] Log: Torus Interactable: (2.51, 1.19, -2.98)
+[3/30/2026 4:02:08 PM] Log: Spatial Panel Manipulator UI Examples: (-0.45, 0.93, -2.35)
+[3/30/2026 4:02:08 PM] Log: Cylinder Interactable: (2.15, 1.16, -2.98)
+[3/30/2026 4:02:08 PM] Log: Sphere Interactable: (3.25, 2.81, 0.50)
+[3/30/2026 4:02:08 PM] Log: Tapered Interactable: (2.50, 1.60, -2.98)
+[3/30/2026 4:02:08 PM] Log: Cube Interactable: (2.51, 1.40, -2.98)
+[3/30/2026 4:02:08 PM] Log: Spatial Panel Manipulator Model: (0.44, 0.93, -1.83)
+[3/30/2026 4:02:08 PM] Log: Tapered Interactable: (2.51, 0.99, -2.98)
+[3/30/2026 4:02:08 PM] Warning: Hand Tracking Subsystem not found or not running, can't subscribe to hand tracking status. Enable that feature in the OpenXR project settings and ensure OpenXR is enabled as the plug-in provider. This component will reattempt getting a reference to the subsystem each frame.
+[3/30/2026 4:03:10 PM] Log: Amount of object found : 10.00 objects/minutes.
+[3/30/2026 4:04:10 PM] Log: ✅ ScanInteractableObject has terminated his execution !
+[3/30/2026 4:04:10 PM] Log: ⏹ ScanInteractableObject finish ! - Moving on to the next child
+[3/30/2026 4:04:10 PM] Log: ➡ Launch of the next child : Simple Teleportation
+[3/30/2026 4:04:10 PM] Log: 📢 StartNextChild() called - Actual Index : 1
+[3/30/2026 4:04:10 PM] Warning: No Camera Floor Offset GameObject specified for XR Origin, using attached GameObject.
+[3/30/2026 4:04:11 PM] Log: ▶ Activation of Simple Teleportation
+[3/30/2026 4:04:11 PM] Log: 🎬 Simple Teleportation initialised !
+[3/30/2026 4:04:11 PM] Log: ➡ Simple Teleportation begins his interaction !
+[3/30/2026 4:04:11 PM] Error: Gaze Interactor not set or missing on Simple Teleportation (UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance). Disabling this XR Gaze Assistance component.
+UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance:Start () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@76258c00be3e/Runtime/Interaction/Gaze/XRGazeAssistance.cs:413)
+
+[3/30/2026 4:04:11 PM] Log: 🚀 Téléportation of the player
+[3/30/2026 4:04:11 PM] Log: Trying to teleport at : (0.00, 1.39, 4.07)
+[3/30/2026 4:04:11 PM] Log: [UnitySingleton] An instance of InriaTools.SeparateThread is needed in the scene, so '(singleton) InriaTools.SeparateThread (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
+[3/30/2026 4:04:11 PM] Log: Amount of object found : 0.00 objects/minutes.
+[3/30/2026 4:04:11 PM] Log: The amount of objects found drop to zero, stop the scanning
+[3/30/2026 4:04:11 PM] Log: Trying to teleport at : (7.23, 1.39, 1.26)
+[3/30/2026 4:04:12 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:12 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.00, 0.00, 0.00)
+[3/30/2026 4:04:12 PM] Log: Trying to teleport at : (8.96, 1.39, -1.64)
+[3/30/2026 4:04:12 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:12 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (7.23, 1.39, 1.26)
+[3/30/2026 4:04:13 PM] Log: Trying to teleport at : (6.90, 1.39, 4.40)
+[3/30/2026 4:04:14 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:14 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (8.96, 1.39, -1.64)
+[3/30/2026 4:04:15 PM] Log: Trying to teleport at : (-9.79, 1.39, -8.01)
+[3/30/2026 4:04:15 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:15 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (6.90, 1.39, 4.40)
+[3/30/2026 4:04:16 PM] Log: Trying to teleport at : (-4.70, 1.39, -6.01)
+[3/30/2026 4:04:16 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:16 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-9.79, 1.39, -8.01)
+[3/30/2026 4:04:17 PM] Log: Trying to teleport at : (0.23, 1.39, -0.84)
+[3/30/2026 4:04:17 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:17 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-4.70, 1.39, -6.01)
+[3/30/2026 4:04:18 PM] Log: Trying to teleport at : (-7.53, 1.39, -0.35)
+[3/30/2026 4:04:18 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:18 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.23, 1.39, -0.84)
+[3/30/2026 4:04:19 PM] Log: Trying to teleport at : (-1.93, 1.39, -2.76)
+[3/30/2026 4:04:19 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:19 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-7.53, 1.39, -0.35)
+[3/30/2026 4:04:20 PM] Log: Trying to teleport at : (-5.90, 1.39, 8.15)
+[3/30/2026 4:04:20 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:20 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-1.93, 1.39, -2.76)
+[3/30/2026 4:04:21 PM] Log: Trying to teleport at : (-6.82, 1.39, 5.70)
+[3/30/2026 4:04:21 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:21 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-5.90, 1.39, 8.15)
+[3/30/2026 4:04:22 PM] Log: Trying to teleport at : (8.37, 1.39, -8.50)
+[3/30/2026 4:04:22 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:22 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-6.82, 1.39, 5.70)
+[3/30/2026 4:04:23 PM] Log: Trying to teleport at : (6.27, 1.39, 0.92)
+[3/30/2026 4:04:23 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:23 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (8.37, 1.39, -8.50)
+[3/30/2026 4:04:24 PM] Log: Trying to teleport at : (3.67, 1.39, -6.51)
+[3/30/2026 4:04:24 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:24 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (6.27, 1.39, 0.92)
+[3/30/2026 4:04:25 PM] Log: Trying to teleport at : (8.15, 1.39, -7.97)
+[3/30/2026 4:04:25 PM] Log: TestGenerated - Teleportation
+[3/30/2026 4:04:25 PM] Log: ORACLE CanTeleport - TestPassed - Teleportation successfully done at (3.67, 1.39, -6.51)
+[3/30/2026 4:04:26 PM] Log: ✅ Simple Teleportation has terminated his execution !
+[3/30/2026 4:04:26 PM] Log: ⏹ Simple Teleportation finish ! - Moving on to the next child
+[3/30/2026 4:04:26 PM] Log: ➡ Launch of the next child : Teleportation Outside scene
+[3/30/2026 4:04:26 PM] Log: 📢 StartNextChild() called - Actual Index : 2
+[3/30/2026 4:04:26 PM] Log: ▶ Activation of Teleportation Outside scene
+[3/30/2026 4:04:26 PM] Log: 🎬 Teleportation Outside scene initialised !
+[3/30/2026 4:04:26 PM] Log: ➡ Teleportation Outside scene begins his interaction !
+[3/30/2026 4:04:26 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:26 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3377725.00, 1.57, 233647.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -36,8 +113,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:23 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:23 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3436437.00, 1.57, -544806.70)
+[3/30/2026 4:04:27 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:27 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1177022.00, 1.57, 3097775.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -53,8 +130,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:24 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:24 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2978275.00, 1.57, -1885986.00)
+[3/30/2026 4:04:28 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:28 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (2267746.00, 1.57, -620337.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -70,8 +147,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:25 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:25 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (2562213.00, 1.57, 584258.60)
+[3/30/2026 4:04:29 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:29 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1740551.00, 1.57, -2616218.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -87,8 +164,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:26 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:26 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (896111.80, 1.57, -91742.78)
+[3/30/2026 4:04:30 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:30 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1978718.00, 1.57, 701576.80)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -104,8 +181,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:27 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:27 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (931539.50, 1.57, -3223495.00)
+[3/30/2026 4:04:31 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:31 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1312046.00, 1.57, 1029261.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -121,8 +198,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:28 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:28 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2085321.00, 1.57, -215513.90)
+[3/30/2026 4:04:32 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:32 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1256131.00, 1.57, 3133975.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -138,8 +215,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:29 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:29 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2840805.00, 1.57, -2060803.00)
+[3/30/2026 4:04:33 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:33 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3354280.00, 1.57, -284973.90)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -155,8 +232,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:30 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:30 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-1859122.00, 1.57, -126403.30)
+[3/30/2026 4:04:34 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:34 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2139347.00, 1.57, 1134063.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -172,8 +249,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:31 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:31 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (3264316.00, 1.57, -1211840.00)
+[3/30/2026 4:04:35 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:35 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (396165.50, 1.57, 3513174.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -189,8 +266,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:32 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:32 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (35526.22, 1.57, 3070375.00)
+[3/30/2026 4:04:36 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:36 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (162780.90, 1.57, -665515.30)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -206,8 +283,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:33 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:33 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3255093.00, 1.57, -272258.60)
+[3/30/2026 4:04:37 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:37 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2134030.00, 1.57, 2442908.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -223,8 +300,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:34 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:34 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-3489894.00, 1.57, 165729.60)
+[3/30/2026 4:04:38 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:38 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1343635.00, 1.57, 1638993.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -240,8 +317,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:35 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:35 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2226281.00, 1.57, 2563003.00)
+[3/30/2026 4:04:39 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:39 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (855076.80, 1.57, -1937348.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -257,8 +334,8 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:36 PM] Log: TestGenerated - OutsideSceneTeleportation
-[3/30/2026 2:47:36 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2437198.00, 1.57, -2154060.00)
+[3/30/2026 4:04:40 PM] Log: TestGenerated - OutsideSceneTeleportation
+[3/30/2026 4:04:40 PM] Error: ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1801976.00, 1.57, -2225374.00)
 UnityEngine.Debug:LogError (object)
 OutsideSceneEffectorSpace.OutsideSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/OutsideSceneEffector.cs:88)
 Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
@@ -274,8 +351,221 @@ Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
 InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
 InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
 
-[3/30/2026 2:47:37 PM] Log: ✅ Teleportation Outside scene has terminated his execution !
-[3/30/2026 2:47:37 PM] Log: ⏹ Teleportation Outside scene finish ! - Moving on to the next child
-[3/30/2026 2:47:37 PM] Log: ✅ Test Suite terminated !
-[3/30/2026 2:47:37 PM] Log: ACTION_DONE
-[3/30/2026 2:47:37 PM] Log: Teleport log written to: Logs/TESTREPLAY\TESTREPLAY_SizeScene_31b9418e-af06-456a-8a86-7f07c73c22a7_2026-03-30.txt
+[3/30/2026 4:04:41 PM] Log: ✅ Teleportation Outside scene has terminated his execution !
+[3/30/2026 4:04:41 PM] Log: ⏹ Teleportation Outside scene finish ! - Moving on to the next child
+[3/30/2026 4:04:41 PM] Log: ➡ Launch of the next child : Teleport in interactable Object
+[3/30/2026 4:04:41 PM] Log: 📢 StartNextChild() called - Actual Index : 3
+[3/30/2026 4:04:41 PM] Log: ▶ Activation of Teleport in interactable Object
+[3/30/2026 4:04:41 PM] Log: 🎬 Teleport in interactable Object initialised !
+[3/30/2026 4:04:41 PM] Log: ➡ Teleport in interactable Object begins his interaction !
+[3/30/2026 4:04:41 PM] Log: Positions read from file: 10
+[3/30/2026 4:04:41 PM] Log: Teleport log written to: Logs/TESTREPLAY\TESTREPLAY_SizeScene_a17004ff-dd24-4dd1-acd4-22253c966849_2026-03-30.txt
+[3/30/2026 4:04:42 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:42 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.49, 0.71, -2.13)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:43 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:43 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.19, -2.98)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:44 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:44 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (-0.45, 0.93, -2.35)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:45 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:45 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.15, 1.16, -2.98)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:46 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:46 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (3.25, 2.81, 0.50)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:47 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:47 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.50, 1.60, -2.98)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:48 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:48 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.40, -2.98)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:49 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:49 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (0.44, 0.93, -1.83)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:50 PM] Log: TestGenerated - InObjectSceneTeleportation
+[3/30/2026 4:04:50 PM] Error: ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 0.99, -2.98)
+UnityEngine.Debug:LogError (object)
+InObjectSceneEffectorSpace.InObjectSceneEffector:SafeEffectorUpdate () (at Assets/Scripts/Effector/InObjectSceneEffector.cs:74)
+Xareus.Scenarios.Unity.AUnityEffector:<EffectorUpdate>b__5_0 ()
+InriaTools.UnityThreadExecute:InvokeActionForNextExecutionStepsAndWait (System.Action,InriaTools.UnityThreadExecute/UnityExecutionStep,int) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:182)
+Xareus.Scenarios.Unity.AUnityEffector:EffectorUpdate ()
+Xareus.Scenarios.Event:ApplyEffect (Xareus.Scenarios.Context.IContext,Xareus.Scenarios.Context.IContext)
+Xareus.Scenarios.Transition:FireTransition ()
+Xareus.Scenarios.ComplexSequence:StartFireTransition (Xareus.Scenarios.Transition)
+Xareus.Scenarios.ComplexSequence:Advance (bool)
+Xareus.Scenarios.Scenario:NextStep (bool)
+Xareus.Scenarios.Unity.AUnitySensor:UpdateScenario ()
+Xareus.Scenarios.Unity.AInUnityStepSensor:InternalUpdate ()
+InriaTools.UnityThreadExecute:InvokeActions (InriaTools.UnityThreadExecute/UnityExecutionStep) (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:344)
+InriaTools.UnityThreadExecute:Update () (at ./Library/PackageCache/fr.inria.unity.tools@05e07d878e04/Scripts/UnityThreadExecute.cs:364)
+
+[3/30/2026 4:04:51 PM] Log: All positions have been reached!
+[3/30/2026 4:05:11 PM] Log: ✅ Teleport in interactable Object has terminated his execution !
+[3/30/2026 4:05:11 PM] Log: ⏹ Teleport in interactable Object finish ! - Moving on to the next child
+[3/30/2026 4:05:11 PM] Log: ➡ Launch of the next child : Object colission
+[3/30/2026 4:05:11 PM] Log: 📢 StartNextChild() called - Actual Index : 4
+[3/30/2026 4:05:11 PM] Log: ▶ Activation of Object colission
+[3/30/2026 4:05:11 PM] Log: 🎬 Object colission initialised !
+[3/30/2026 4:05:11 PM] Log: ➡ Object colission begins his interaction !
+[3/30/2026 4:05:11 PM] Log: Positions read from file: 10
+[3/30/2026 4:05:11 PM] Log: Cube position: (2.61, 0.95, -0.16)
+[3/30/2026 4:05:13 PM] Log: TestGenerated - CollisionDetection
+[3/30/2026 4:05:13 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Arch_Interactable at: (2.49, 0.71, -2.13)
+[3/30/2026 4:05:13 PM] Log: Cube position: (2.49, 0.71, -2.13)
+[3/30/2026 4:05:15 PM] Log: TestGenerated - CollisionDetection
+[3/30/2026 4:05:15 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Mesh_COL at: (2.51, 1.19, -2.98)
+[3/30/2026 4:05:15 PM] Log: Cube position: (2.51, 1.19, -2.98)
+[3/30/2026 4:05:17 PM] Log: TestGenerated - CollisionDetection
+[3/30/2026 4:05:17 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Spatial Panel Manipulator UI Examples at: (-0.45, 0.93, -2.35)
+[3/30/2026 4:05:17 PM] Log: Cube position: (-0.45, 0.93, -2.35)
+[3/30/2026 4:05:19 PM] Log: TestGenerated - CollisionDetection
+[3/30/2026 4:05:19 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Cylinder_COL at: (2.15, 1.16, -2.98)
+[3/30/2026 4:05:19 PM] Log: Cube position: (2.15, 1.16, -2.98)
+[3/30/2026 4:05:21 PM] Log: ✅ Object colission has terminated his execution !
+[3/30/2026 4:05:21 PM] Log: ⏹ Object colission finish ! - Moving on to the next child
+[3/30/2026 4:05:21 PM] Log: ➡ Launch of the next child : Move Object To Origin
+[3/30/2026 4:05:21 PM] Log: 📢 StartNextChild() called - Actual Index : 5
+[3/30/2026 4:05:21 PM] Warning: There are multiple active and enabled XR Interaction Manager components in the loaded scenes. This is supported, but may not be intended since interactors and interactables are not able to interact with those registered to a different manager. You can use the <b>Window</b> > <b>Analysis</b> > <b>XR Interaction Debugger</b> window to verify the interactors and interactables registered with each. The default manager that interactors and interactables automatically register with when None is: <b>SampleScene</b>/XRInteractionManager
+[3/30/2026 4:05:21 PM] Log: ▶ Activation of Move Object To Origin
+[3/30/2026 4:05:21 PM] Log: 🎬 Move Object To Origin initialised !
+[3/30/2026 4:05:21 PM] Log: ➡ Move Object To Origin begins his interaction !
+[3/30/2026 4:05:21 PM] Log: 🚀 Téléportation of the player
+[3/30/2026 4:05:21 PM] Log: Trying to teleport at : (4.41, 0.28, -3.45)
+[3/30/2026 4:05:21 PM] Log: Cube position: (4.41, 0.28, -3.45)
+[3/30/2026 4:05:21 PM] Log: TestGenerated - CollisionDetection
+[3/30/2026 4:05:21 PM] Log: ORACLE CollisionDetection - TestPassed - Collision successfully done with Sphere_COL at: (3.25, 2.81, 0.50)
+[3/30/2026 4:05:21 PM] Log: Cube position: (3.25, 2.81, 0.50)
+[3/30/2026 4:05:21 PM] Log: Trying to teleport at : (-1.52, 0.28, -5.23)
+[3/30/2026 4:05:21 PM] Log: ORACLE MoveObjectToOrigin - TestGenerated
+[3/30/2026 4:05:21 PM] Log: ORACLE MoveObjectToOrigin - TestPassed - Spatial Panel Manipulator UI Examples was moved to the origin.
+[3/30/2026 4:05:21 PM] Log: Cube position: (-1.52, 0.28, -5.23)
+[3/30/2026 4:05:25 PM] Log: ✅ Move Object To Origin has terminated his execution !
+[3/30/2026 4:05:25 PM] Log: ⏹ Move Object To Origin finish ! - Moving on to the next child
+[3/30/2026 4:05:25 PM] Log: ➡ Launch of the next child : Rapport generator
+[3/30/2026 4:05:25 PM] Log: 📢 StartNextChild() called - Actual Index : 6
+[3/30/2026 4:05:25 PM] Log: ▶ Activation of Rapport generator
+[3/30/2026 4:05:25 PM] Log: 🎬 Rapport generator initialised !
+[3/30/2026 4:05:25 PM] Log: ➡ Rapport generator begins his interaction !
+[3/30/2026 4:05:25 PM] Log: The HTML report has been successfully generated: report_HTML.html
+[3/30/2026 4:05:25 PM] Log: Folder path: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets\..\Logs\coverage
+[3/30/2026 4:05:25 PM] Log: FoundObjects.txt contains 10 lines.
+[3/30/2026 4:05:25 PM] Log: Total Interactable objects in scene: 62.5 from InteractableCoverage
+[3/30/2026 4:05:25 PM] Log: Coverage summary CSV generated at: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets\..\Logs\coverage\coverage_cc6c4_30032026.csv
+[3/30/2026 4:05:29 PM] Log: ✅ Rapport generator has terminated his execution !
+[3/30/2026 4:05:29 PM] Log: ⏹ Rapport generator finish ! - Moving on to the next child
+[3/30/2026 4:05:29 PM] Log: ✅ Test Suite terminated !
+[3/30/2026 4:05:29 PM] Log: ACTION_DONE

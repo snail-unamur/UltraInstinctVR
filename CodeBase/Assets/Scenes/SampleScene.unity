@@ -17949,12 +17949,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: childrenPrefabs.Array.size
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: 'childrenPrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 217447826}
+      objectReference: {fileID: 7262856367770688548}
     - target: {fileID: 2002952770890432201, guid: 387501bbeae45274985b9d9b105f4ef5, type: 3}
       propertyPath: 'childrenPrefabs.Array.data[1]'
       value: 
