@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\CaraXRState\InteractionBinding.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRTriggerHandler.cs" />
     <Compile Include="Assets\Scripts\Utils\GetStartTime.cs" />
+    <Compile Include="Assets\Scripts\Interaction\VRTest\VRGuide.cs" />
+    <Compile Include="Assets\Scripts\Utils\GetCPUTime.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoPlayerRenderTexture.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\Rotator.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRKnob.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Assets\Scripts\Interaction\VRTest\Logs.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\RayAttachModifier.cs" />
     <Compile Include="Assets\Scripts\CaraXRState\Head.cs" />
+    <Compile Include="Assets\Scripts\Utils\CoverageToCSV.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\XRPokeFollowAffordanceFill.cs" />
     <Compile Include="Assets\Scripts\CaraXRState\Gaze.cs" />
     <Compile Include="Assets\Scripts\Interaction\Teleportation\TeleportPlayer.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="Assets\Scripts\Interaction\VRTest\MouseOperation.cs" />
     <Compile Include="Assets\Scripts\Effector\TeleportationEffector.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRSmart.cs" />
+    <Compile Include="Assets\Scripts\Utils\CountInteractableObject.cs" />
     <Compile Include="Assets\Scripts\Utils\LogAnalyser.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRTest.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\BezierCurve.cs" />
@@ -145,6 +149,7 @@
     <None Include="Assets\VRTemplateAssets\Shaders\TexturedFresnelStandard.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\VRTemplateAssets\Shaders\TexturedStableFresnelCommon.cginc" />
+    <None Include="Assets\Scripts\game_logs.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\VRTemplateAssets\Materials\Skybox\Horizontal Skybox.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
@@ -1206,6 +1211,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.XR.CoreUtils">
       <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
       <Private>False</Private>
@@ -1274,6 +1283,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.Hands.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VRExplorer.Core">
+      <HintPath>Library\ScriptAssemblies\VRExplorer.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1296,6 +1309,10 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
@@ -1328,6 +1345,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.Simulation">
@@ -1442,6 +1463,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.ARFoundation.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="HenryLab.EAT">
+      <HintPath>Library\ScriptAssemblies\HenryLab.EAT.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
       <Private>False</Private>
@@ -1466,6 +1491,10 @@
       <HintPath>Library\ScriptAssemblies\Xareus.Scenarios.Unity.VisualScripting.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VRExplorer.Editor">
+      <HintPath>Library\ScriptAssemblies\VRExplorer.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1482,12 +1511,16 @@
       <HintPath>Library\ScriptAssemblies\Mischief.MDV.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Xareus.Unity.Libraries">
-      <HintPath>Library\ScriptAssemblies\Xareus.Unity.Libraries.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BNG">
+      <HintPath>Library\ScriptAssemblies\BNG.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xareus.Unity.Libraries">
+      <HintPath>Library\ScriptAssemblies\Xareus.Unity.Libraries.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.007">
@@ -1524,6 +1557,10 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Mathematics">

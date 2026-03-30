@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-02-25 12:21:10Z" end-time="2026-02-25 12:26:14Z" duration="303.5126952">
+  <test-suite type="TestSuite" id="1007" name="My project" fullname="My project" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-02-25 12:21:10Z" end-time="2026-02-25 12:26:14Z" duration="303.512695" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1003" name="Tests.dll" fullname="C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-02-25 12:21:10Z" end-time="2026-02-25 12:26:14Z" duration="303.495889" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="25784" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1001" name="LaunchTest" fullname="LaunchTest" classname="LaunchTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-02-25 12:21:10Z" end-time="2026-02-25 12:26:14Z" duration="303.479959" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1002" name="LaunchTestWithEnumeratorPasses" fullname="LaunchTest.LaunchTestWithEnumeratorPasses" methodname="LaunchTestWithEnumeratorPasses" classname="LaunchTest" runstate="Runnable" seed="1627628345" result="Failed" start-time="2026-02-25 12:21:10Z" end-time="2026-02-25 12:26:14Z" duration="303.456535" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <failure>
+            <message><![CDATA[Unhandled log message: '[Error] Gaze Interactor not set or missing on ScanInteractableObject (UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance). Disabling this XR Gaze Assistance component.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+            <stack-trace><![CDATA[UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance:Start () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@76258c00be3e/Runtime/Interaction/Gaze/XRGazeAssistance.cs:413)
+
+]]></stack-trace>
+          </failure>
+          <output><![CDATA[Could not find a device that supports eye tracking on Awake. Gaze Interactor (UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.GazeInputManager) has subscribed to device connected events and will activate the GameObject when an eye tracking device is connected.
+Scenario files used in the scene SampleScene and added to the build: 
+Assets/Oracle_InObjectScene.xml
+Assets/Oracle_Colission.xml
+Assets/Oracle_MoveObjectToOrigin.xml
+Assets/Oracle_Teleportation.xml
+Assets/Oracle_OutSceneTeleportation.xml
+Assets/Oracle_Selection.xml
+Mesh 'Plane' has more materials (2) than submeshes (1)
+🚀 Initialisation of the test suite
+📢 StartNextChild() called - Actual Index : 0
+No Camera Floor Offset GameObject specified for XR Origin, using attached GameObject.
+▶ Activation of ScanInteractableObject
+🎬 ScanInteractableObject initialised !
+➡ ScanInteractableObject begins his interaction !
+Total Interactable objects in scene: 16
+Gaze Interactor not set or missing on ScanInteractableObject (UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance). Disabling this XR Gaze Assistance component.
+Hand Tracking Subsystem not found or not running, can't subscribe to hand tracking status. Enable that feature in the OpenXR project settings and ensure OpenXR is enabled as the plug-in provider. This component will reattempt getting a reference to the subsystem each frame.
+The FoundObject.txt file has been written.
+Torus Interactable: (2.51, 1.19, -2.98)
+Arch_Interactable: (2.49, 0.71, -2.13)
+Sphere Interactable: (3.25, 2.81, 0.50)
+Cube Interactable: (2.51, 1.40, -2.98)
+Tapered Interactable: (2.50, 1.60, -2.98)
+Spatial Panel Manipulator Model: (0.44, 0.93, -1.83)
+Tapered Interactable: (2.51, 0.99, -2.98)
+Cylinder Interactable: (2.15, 1.16, -2.98)
+Spatial Panel Manipulator UI Examples: (-0.45, 0.93, -2.35)
+Blaster: (2.61, 0.95, -0.16)
+Amount of object found : 10.00 objects/minutes.
+✅ ScanInteractableObject has terminated his execution !
+⏹ ScanInteractableObject finish ! - Moving on to the next child
+➡ Launch of the next child : Simple Teleportation
+📢 StartNextChild() called - Actual Index : 1
+No Camera Floor Offset GameObject specified for XR Origin, using attached GameObject.
+▶ Activation of Simple Teleportation
+🎬 Simple Teleportation initialised !
+➡ Simple Teleportation begins his interaction !
+Gaze Interactor not set or missing on Simple Teleportation (UnityEngine.XR.Interaction.Toolkit.Gaze.XRGazeAssistance). Disabling this XR Gaze Assistance component.
+🚀 Téléportation of the player
+Trying to teleport at : (5.02, 1.39, -7.20)
+[UnitySingleton] An instance of InriaTools.SeparateThread is needed in the scene, so '(singleton) InriaTools.SeparateThread (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
+Amount of object found : 0.00 objects/minutes.
+The amount of objects found drop to zero, stop the scanning
+Trying to teleport at : (2.07, 1.39, -9.64)
+TestGenerated - Teleportation
+ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.00, 0.00, 0.00)
+Trying to teleport at : (-9.25, 1.39, 1.67)
+TestGenerated - Teleportation
+ORACLE CanTeleport - TestPassed - Teleportation successfully done at (2.07, 1.39, -9.64)
+Trying to teleport at : (0.07, 1.39, 9.64)
+TestGenerated - Teleportation
+ORACLE CanTeleport - TestPassed - Teleportation successfully done at (-9.25, 1.39, 1.67)
+Trying to teleport at : (-2.05, 1.39, 8.11)
+TestGenerated - Teleportation
+ORACLE CanTeleport - TestPassed - Teleportation successfully done at (0.07, 1.39, 9.64)
+✅ Simple Teleportation has terminated his execution !
+⏹ Simple Teleportation finish ! - Moving on to the next child
+➡ Launch of the next child : Teleportation Outside scene
+📢 StartNextChild() called - Actual Index : 2
+▶ Activation of Teleportation Outside scene
+🎬 Teleportation Outside scene initialised !
+➡ Teleportation Outside scene begins his interaction !
+TestGenerated - OutsideSceneTeleportation
+ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2610026.00, 1.52, -2123122.00)
+TestGenerated - OutsideSceneTeleportation
+ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (3349298.00, 1.52, 363394.10)
+TestGenerated - OutsideSceneTeleportation
+ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (1191279.00, 1.52, 3184952.00)
+TestGenerated - OutsideSceneTeleportation
+ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (-2351252.00, 1.52, -2613161.00)
+TestGenerated - OutsideSceneTeleportation
+ORACLE OutsideSceneTeleportation - TestFailed - A player cannot teleport outside the scene at position: (2153447.00, 1.52, 466653.40)
+✅ Teleportation Outside scene has terminated his execution !
+⏹ Teleportation Outside scene finish ! - Moving on to the next child
+➡ Launch of the next child : Teleport in interactable Object
+📢 StartNextChild() called - Actual Index : 3
+▶ Activation of Teleport in interactable Object
+🎬 Teleport in interactable Object initialised !
+➡ Teleport in interactable Object begins his interaction !
+Positions read from file: 10
+Teleport log written to: Logs/TESTREPLAY\TESTREPLAY_SizeScene_95c8ba35-8ca3-4bda-a1e5-c2a6d8105ab8_2026-02-25.txt
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.49, 0.71, -2.13)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (3.25, 2.81, 0.50)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 1.40, -2.98)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.50, 1.60, -2.98)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (0.44, 0.93, -1.83)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.51, 0.99, -2.98)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.15, 1.16, -2.98)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (-0.45, 0.93, -2.35)
+TestGenerated - InObjectSceneTeleportation
+ORACLE InObjectScene - TestFailed - Teleportation into covered object detected: (2.61, 0.95, -0.16)
+All positions have been reached!
+✅ Teleport in interactable Object has terminated his execution !
+⏹ Teleport in interactable Object finish ! - Moving on to the next child
+➡ Launch of the next child : Object colission
+📢 StartNextChild() called - Actual Index : 4
+▶ Activation of Object colission
+🎬 Object colission initialised !
+➡ Object colission begins his interaction !
+Positions read from file: 10
+Cube position: (2.51, 1.19, -2.98)
+TestGenerated - CollisionDetection
+ORACLE CollisionDetection - TestPassed - Collision successfully done with Arch_Interactable at: (2.49, 0.71, -2.13)
+Cube position: (2.49, 0.71, -2.13)
+TestGenerated - CollisionDetection
+ORACLE CollisionDetection - TestPassed - Collision successfully done with Sphere_COL at: (3.25, 2.81, 0.50)
+Cube position: (3.25, 2.81, 0.50)
+TestGenerated - CollisionDetection
+ORACLE CollisionDetection - TestPassed - Collision successfully done with Cube_COL at: (2.51, 1.40, -2.98)
+Cube position: (2.51, 1.40, -2.98)
+✅ Object colission has terminated his execution !
+⏹ Object colission finish ! - Moving on to the next child
+➡ Launch of the next child : Move Object To Origin
+📢 StartNextChild() called - Actual Index : 5
+There are multiple active and enabled XR Interaction Manager components in the loaded scenes. This is supported, but may not be intended since interactors and interactables are not able to interact with those registered to a different manager. You can use the <b>Window</b> > <b>Analysis</b> > <b>XR Interaction Debugger</b> window to verify the interactors and interactables registered with each. The default manager that interactors and interactables automatically register with when None is: <b>SampleScene</b>/XRInteractionManager
+▶ Activation of Move Object To Origin
+🎬 Move Object To Origin initialised !
+➡ Move Object To Origin begins his interaction !
+🚀 Téléportation of the player
+Trying to teleport at : (-2.98, 0.28, 8.11)
+Cube position: (-2.98, 0.28, 8.11)
+TestGenerated - CollisionDetection
+ORACLE CollisionDetection - TestPassed - Collision successfully done with Spatial Panel Manipulator Model at: (0.44, 0.93, -1.83)
+Cube position: (0.44, 0.93, -1.83)
+Trying to teleport at : (-0.51, 0.28, 2.62)
+ORACLE MoveObjectToOrigin - TestGenerated
+ORACLE MoveObjectToOrigin - TestPassed - Blaster was moved to the origin.
+Cube position: (-0.51, 0.28, 2.62)
+✅ Move Object To Origin has terminated his execution !
+⏹ Move Object To Origin finish ! - Moving on to the next child
+➡ Launch of the next child : Rapport generator
+📢 StartNextChild() called - Actual Index : 6
+▶ Activation of Rapport generator
+🎬 Rapport generator initialised !
+➡ Rapport generator begins his interaction !
+Folder path: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets\..\Logs\coverage
+FoundObjects.txt contains 10 lines.
+Total Interactable objects in scene: 62.5 from InteractableCoverage
+Coverage summary CSV generated at: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets\..\Logs\coverage\coverage_001ba_25022026.csv
+The HTML report has been successfully generated: report_HTML.html
+✅ Rapport generator has terminated his execution !
+⏹ Rapport generator finish ! - Moving on to the next child
+✅ Test Suite terminated !
+ACTION_DONE
+[Code Coverage] Code Coverage results for visited sequence points were saved in C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/CodeCoverage/CodeBase-opencov/PlayMode/TestCoverageResults_0001.xml
+[Code Coverage] Code Coverage Report was generated in C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/CodeCoverage/Report
+Included Assemblies: Assembly-CSharp
+Excluded Assemblies: <Not specified>
+Included Paths: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Assets/**
+Excluded Paths: C:/Users/glongfil/Documents/GitHub/UltraInstinctVR/CodeBase/Packages/**
+Saving results to: C:/Users/glongfil/AppData/LocalLow/DefaultCompany/My project\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

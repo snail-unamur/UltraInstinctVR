@@ -8,39 +8,37 @@ public class LogToFile : MonoBehaviour
 
     void Awake()
     {
-        // Define the path of the log file (inside Logs/)
-        string projectRoot = Directory.GetParent(Application.dataPath).FullName;
+        // Définir le chemin du fichier log (dans Assets/Scripts/)
+        logFilePath = Path.Combine(Application.dataPath, "Scripts", "game_logs.txt");
 
-        logFilePath = Path.Combine(projectRoot, "Logs", "game_logs.txt");
-
-        // Check if the folder exists, otherwise create it
+        // Vérifier si le dossier existe, sinon le créer
         string directoryPath = Path.GetDirectoryName(logFilePath);
         if (!Directory.Exists(directoryPath))
         {
             Directory.CreateDirectory(directoryPath);
         }
 
-        // If the file already exists, clear it to start a new session
+        // Si le fichier existe déjà, on le vide pour commencer une nouvelle session
         if (File.Exists(logFilePath))
         {
-            File.WriteAllText(logFilePath, string.Empty);  // Clears the file
+            File.WriteAllText(logFilePath, string.Empty);  // Vide le fichier
         }
         else
         {
-            // If the file does not exist, create it with an initial message
+            // Si le fichier n'existe pas, on le crée avec un message initial
             using (StreamWriter writer = File.CreateText(logFilePath))
             {
-                writer.WriteLine("=== New Session ===");
+                writer.WriteLine("=== Nouvelle Session ===");
             }
         }
 
-        // Add a new entry at the beginning of the file
+        // Ajouter une nouvelle entrée au début du fichier
         using (StreamWriter writer = new StreamWriter(logFilePath, true))
         {
-            writer.WriteLine("\n=== New Session ===");
+            writer.WriteLine("\n=== Nouvelle Session ===");
         }
 
-        // Listen to Unity console logs
+        // Écouter les logs de la console
         Application.logMessageReceived += LogToFileMethod;
     }
 
