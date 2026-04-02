@@ -212,3 +212,23 @@ public class Modalities
         }
     }
 }
+
+public class Modalitiess
+{
+
+    public Settings Settings1
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public State State
+    {
+        get => default;
+        set
+        {
+        }
+    }
+}

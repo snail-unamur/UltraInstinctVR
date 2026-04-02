@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StateMachine">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\StateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="State">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="StateMachine" ManuallyRouted="true">
+      <Path>
+        <Point X="8.25" Y="1.368" />
+        <Point X="8.25" Y="1.875" />
+        <Point X="4.75" Y="1.875" />
+        <Point X="4.75" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Target" Type="Transition">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAACAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\State.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Target" />
+      <Property Name="Modalitiess" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Transition">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\Transition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TriggeredBy" />
+      <Property Name="Source" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Events">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modalitiess">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\Modalities.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Settings1" />
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Settings">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
