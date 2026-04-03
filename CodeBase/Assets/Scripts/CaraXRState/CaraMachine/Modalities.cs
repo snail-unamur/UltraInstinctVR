@@ -13,7 +13,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.OpenXR.Features;
 using static UnityEngine.XR.Interaction.Toolkit.Inputs.Interactions.SectorInteraction;
 
-/**
+
 public class Modalities
 {
 
@@ -214,7 +214,7 @@ public class Modalities
         }
     }
 }
-**/
+
 
 
 public class Modalitiess
