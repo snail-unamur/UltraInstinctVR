@@ -9,16 +9,23 @@ from datetime import datetime
 
 # Chemins vers les éditeurs Unity
 UNITY_PATHS = [
-    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.23f1\\Editor\\Unity.exe"
+    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.61f1\\Editor\\Unity.exe",
+    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.1.3f1\\Editor\\Unity.exe",
+    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.61f1\\Editor\\Unity.exe",
+    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.62f1\\Editor\\Unity.exe"
 ]
 
 # Chemins vers les projets Unity
 PROJECT_PATHS = [
-    r""
+    r"C:\\Users\\glongfil\\Documents\\GitHub\\XRBench3D\\XRI Starter Kit",
+    r"C:\\Users\\glongfil\\Documents\\GitHub\\vertexform3d-unity-vr-starterkit",
+    r"C:\\Users\\glongfil\\Documents\\GitHub\\XRBench3D\\XRToolKitEssentials",
+    r"C:\\Users\\glongfil\\Documents\\GitHub\\UltraInstinctVR\\CodeBase"
+
 ]
 
-REPEAT_COUNT = 3
-TIMEOUT = 1500  # 25 minutes
+REPEAT_COUNT = 1
+TIMEOUT = 60  
 
 
 # =========================
@@ -161,7 +168,6 @@ def run_unity_once(project_path, unity_path, index, iteration):
 
     cpu_used = max(0.0, end_cpu - start_cpu)
 
-    # ⏱️ end time réel
     end_dt = datetime.utcnow().isoformat()
 
     return (index, iteration, success, cpu_used, start_dt, end_dt)
@@ -218,19 +224,38 @@ def run_project_iterations(project_index):
 # =========================
 # Parallel runner
 # =========================
+
+def chunk_list(lst, size):
+    """Split list into chunks of given size."""
+    for i in range(0, len(lst), size):
+        yield list(range(i, min(i + size, len(lst))))
+
+
+
 def run_projects_in_parallel():
     if len(PROJECT_PATHS) != len(UNITY_PATHS):
         print("⚠️ Le nombre de projets et d'éditeurs ne correspond pas.")
         return
 
-    with Pool(len(PROJECT_PATHS)) as pool:
-        all_results = pool.map(run_project_iterations, range(len(PROJECT_PATHS)))
+    BATCH_SIZE = 3
 
+    all_results = [None] * len(PROJECT_PATHS)
+
+    for batch_indices in chunk_list(PROJECT_PATHS, BATCH_SIZE):
+        print(f"\n🚀 Lancement batch: {batch_indices}")
+
+        with Pool(len(batch_indices)) as pool:
+            results = pool.map(run_project_iterations, batch_indices)
+
+        # Store results in correct positions
+        for idx, res in zip(batch_indices, results):
+            all_results[idx] = res
+
+    # Final summary
     for idx, results in enumerate(all_results):
         success_count = results.count(True)
         fail_count = results.count(False)
         print(f"\n📊 Résumé du projet {idx+1} : {success_count} succès / {REPEAT_COUNT} | {fail_count} échecs")
-
 
 # =========================
 # Main
