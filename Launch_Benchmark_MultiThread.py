@@ -6,26 +6,24 @@ import csv
 import psutil
 import uuid
 from datetime import datetime
+import xml.etree.ElementTree as ET
+
 
 # Chemins vers les éditeurs Unity
 UNITY_PATHS = [
-    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.61f1\\Editor\\Unity.exe",
-    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.1.3f1\\Editor\\Unity.exe",
-    r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.61f1\\Editor\\Unity.exe",
+
     r"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.62f1\\Editor\\Unity.exe"
 ]
 
 # Chemins vers les projets Unity
 PROJECT_PATHS = [
-    r"C:\\Users\\glongfil\\Documents\\GitHub\\XRBench3D\\XRI Starter Kit",
-    r"C:\\Users\\glongfil\\Documents\\GitHub\\vertexform3d-unity-vr-starterkit",
-    r"C:\\Users\\glongfil\\Documents\\GitHub\\XRBench3D\\XRToolKitEssentials",
+
     r"C:\\Users\\glongfil\\Documents\\GitHub\\UltraInstinctVR\\CodeBase"
 
 ]
 
 REPEAT_COUNT = 1
-TIMEOUT = 60  
+TIMEOUT = 300
 
 
 # =========================
@@ -161,6 +159,9 @@ def run_unity_once(project_path, unity_path, index, iteration):
         process=process
     )
 
+
+    export_coverage_to_csv(project_path)
+
     # CPU fin (avant disparition)
     end_cpu = get_total_cpu_time(ps_proc)
 
@@ -256,6 +257,65 @@ def run_projects_in_parallel():
         success_count = results.count(True)
         fail_count = results.count(False)
         print(f"\n📊 Résumé du projet {idx+1} : {success_count} succès / {REPEAT_COUNT} | {fail_count} échecs")
+
+
+
+#=========================
+# Collect coverage metric
+#=========================
+
+def export_coverage_to_csv(project_path):
+    xml_path = os.path.join(project_path, "CodeCoverage", "Report", "Summary.xml")
+
+    folder_path = os.path.join(project_path, "Logs", "coverage")
+    os.makedirs(folder_path, exist_ok=True)
+
+    filename = f"coverage_{str(uuid.uuid4())[:6]}.csv"
+    csv_path = os.path.join(folder_path, filename)
+
+    if not os.path.exists(xml_path):
+        print(f"❌ Coverage Summary not found at: {xml_path}")
+        return
+
+    try:
+        tree = ET.parse(xml_path)
+        root = tree.getroot()
+
+        summary = root.find(".//Summary")
+
+        if summary is None:
+            print("❌ Summary node not found in coverage report.")
+            return
+
+        total_methods = summary.findtext("Totalmethods", default="0")
+        covered_methods = summary.findtext("Coveredmethods", default="0")
+        method_coverage = summary.findtext("Methodcoverage", default="0")
+        line_coverage = summary.findtext("Linecoverage", default="0")
+
+
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+
+            writer.writerow([
+                "MethodCoverage",
+                "TotalMethods",
+                "CoveredMethods",
+                "LineCoverage",
+            ])
+
+            writer.writerow([
+                method_coverage,
+                total_methods,
+                covered_methods,
+                line_coverage,
+            ])
+
+        print(f"📄 Coverage CSV generated at: {csv_path}")
+
+    except Exception as e:
+        print(f"💥 Error parsing coverage XML: {e}")
+
+
 
 # =========================
 # Main
