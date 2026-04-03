@@ -28,11 +28,10 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Target" />
-      <Property Name="Modalitiess" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Transition">
-    <Position X="7.25" Y="2.25" Width="1.5" />
+    <Position X="7.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\Transition.cs</FileName>
@@ -52,19 +51,27 @@
   <Class Name="Modalitiess">
     <Position X="3.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAgAAABAAAEAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\Modalities.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Settings1" />
       <Property Name="State" />
+      <Property Name="Inputs" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Settings">
-    <Position X="7" Y="5" Width="1.5" />
+    <Position X="7" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inputs">
+    <Position X="3.75" Y="7.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\inputs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

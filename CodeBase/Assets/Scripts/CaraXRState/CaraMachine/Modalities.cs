@@ -12,6 +12,8 @@ using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.OpenXR.Features;
 using static UnityEngine.XR.Interaction.Toolkit.Inputs.Interactions.SectorInteraction;
+
+/**
 public class Modalities
 {
 
@@ -212,9 +214,13 @@ public class Modalities
         }
     }
 }
+**/
+
 
 public class Modalitiess
 {
+    private object Modalite;
+    private string modality_name;
 
     public Settings Settings1
     {
@@ -225,6 +231,14 @@ public class Modalitiess
     }
 
     public State State
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public Inputs Inputs
     {
         get => default;
         set
