@@ -117,6 +117,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\VRTemplateAssets\Shaders\FauxBlurURP.shader" />
     <None Include="Assets\Oracle_Selection.xml" />
+    <None Include="Assets\Scripts\game_logs.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Oracle_InObjectScene.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />

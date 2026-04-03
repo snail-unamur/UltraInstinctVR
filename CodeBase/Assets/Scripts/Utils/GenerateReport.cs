@@ -34,17 +34,13 @@ namespace GenerateReportSpace
             Console.WriteLine($"Number of log containing 'TestGenerated' : {count}");
         }
 
-
         public static void Export()
         {
-            string xmlPath = "CodeCoverage/Report/Summary.xml";
-
-
-            string folderPath = Path.Combine(Application.dataPath, "..", "Logs", "coverage");
+            string folderPath = Path.Combine(Application.dataPath, "..", "Logs", "coverage_interaction");
             Debug.Log("Folder path: " + folderPath);
-            string filename = GenerateFileName();
-            string csvPath = Path.Combine(folderPath,filename);
 
+            string filename = GenerateFileName();
+            string csvPath = Path.Combine(folderPath, filename);
 
             if (!Directory.Exists(folderPath))
             {
@@ -52,37 +48,16 @@ namespace GenerateReportSpace
                 Debug.Log("Created folder: " + folderPath);
             }
 
-            if (!File.Exists(xmlPath))
-            {
-                Debug.LogError("Coverage Summary not found at: " + xmlPath);
-                return;
-            }
-
-            XmlDocument doc = new XmlDocument();
-            doc.Load(xmlPath);
-
-            XmlNode summary = doc.SelectSingleNode("//CoverageReport/Summary");
-
-            if (summary == null)
-            {
-                Debug.LogError("Summary node not found in coverage report.");
-                return;
-            }
-
-            string totalMethods = summary["Totalmethods"].InnerText;
-            string coveredMethods = summary["Coveredmethods"].InnerText;
-            string methodCoverage = summary["Methodcoverage"].InnerText;
-            string lineCoverage = summary["Linecoverage"].InnerText;
             string interactableCoverage = InteractableCoverage().ToString();
+
             using (StreamWriter writer = new StreamWriter(csvPath))
             {
-                writer.WriteLine("MethodCoverage,TotalMethods,CoveredMethods,LineCoverage,InteractableCoverage");
-                writer.WriteLine($"{methodCoverage},{totalMethods},{coveredMethods},{lineCoverage},{interactableCoverage}");
+                writer.WriteLine("InteractableCoverage");
+                writer.WriteLine(interactableCoverage);
             }
 
-            Debug.Log("Coverage summary CSV generated at: " + csvPath);
+            Debug.Log("Interactable coverage CSV generated at: " + csvPath);
         }
-
 
 
         public static float InteractableCoverage()
