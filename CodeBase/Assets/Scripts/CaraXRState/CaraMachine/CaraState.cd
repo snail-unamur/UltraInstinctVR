@@ -31,18 +31,19 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Transition">
-    <Position X="7.25" Y="2.5" Width="1.5" />
+    <Position X="7.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAARAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\Transition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="TriggeredBy" />
       <Property Name="Source" />
+      <Property Name="Action" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Events">
-    <Position X="10.5" Y="2.25" Width="1.5" />
+    <Position X="11" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\Events.cs</FileName>
@@ -72,6 +73,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\inputs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Action">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CaraXRState\CaraMachine\action.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

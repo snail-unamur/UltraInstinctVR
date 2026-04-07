@@ -17,4 +17,12 @@ public class Transition
         {
         }
     }
+
+    public Action Action
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }

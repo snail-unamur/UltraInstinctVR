@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Effector\ObjectSelectionEffector.cs" />
     <Compile Include="Assets\Scripts\Utils\ChildBehavior.cs" />
     <Compile Include="Assets\Maradona.cs" />
+    <Compile Include="Assets\Scripts\CaraXRState\CaraMachine\action.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\VRTemplateAssets\Scripts\VideoTimeScrubControl.cs" />
     <Compile Include="Assets\Scripts\Interaction\VRTest\VRLogger.cs" />
