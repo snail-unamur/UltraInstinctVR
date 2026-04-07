@@ -31,7 +31,7 @@ public class LogPerformance : MonoBehaviour
         // Create or clear the CSV file with new header
         using (StreamWriter writer = new StreamWriter(logFilePath, false))
         {
-            writer.WriteLine("ERROR_NUMBER, ERROR, TIMESTAMP (s), STACKTRACE");
+            writer.WriteLine("ERROR_NUMBER,Error_type,ERROR,TIMESTAMP(s),STACKTRACE");
         }
 
         // Listen to Unity log messages
@@ -66,7 +66,7 @@ public class LogPerformance : MonoBehaviour
             // Write the error to the CSV file
             using (StreamWriter writer = new StreamWriter(logFilePath, true))
             {
-                writer.WriteLine($"{errorCount}, \"{errorMessage}\", {timestamp:F2}, \"{stack}\"");
+                writer.WriteLine($"{errorCount},failure,\"{errorMessage}\", {timestamp:F2}, \"{stack}\"");
             }
         }
     }
