@@ -62,7 +62,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Settings">
-    <Position X="7" Y="6" Width="1.5" />
+    <Position X="7.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CaraXRState\CaraMachine\settings.cs</FileName>
