@@ -15,7 +15,7 @@ public class LaunchTest
         yield return SceneManager.LoadSceneAsync("SampleScene");
 
         // laisse ton expérience tourner
-        yield return new WaitForSeconds(300f);
+        yield return new WaitForSeconds(200f);
 
         Assert.Pass();
     }

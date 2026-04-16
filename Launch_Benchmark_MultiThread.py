@@ -140,7 +140,9 @@ def run_unity_once(project_path, unity_path, index, iteration):
         "-projectPath", project_path,
         "-runTests",
         "-testPlatform", "Playmode",
-        "-enableCodeCoverage"
+        "-enableCodeCoverage",
+        "-coverageOptions", "generateAdditionalMetrics;generateHtmlReport;assemblyFilters:+Assembly-CSharp"
+
     ]
 
     process = subprocess.Popen(
@@ -291,6 +293,8 @@ def export_coverage_to_csv(project_path):
         covered_methods = summary.findtext("Coveredmethods", default="0")
         method_coverage = summary.findtext("Methodcoverage", default="0")
         line_coverage = summary.findtext("Linecoverage", default="0")
+        coverage_branch = summary.findtext("Coveredbranches",default="0")
+        total_branch = summary.findtext("Totalbranches",default="0")
 
 
         with open(csv_path, "w", newline="", encoding="utf-8") as f:
@@ -301,6 +305,8 @@ def export_coverage_to_csv(project_path):
                 "TotalMethods",
                 "CoveredMethods",
                 "LineCoverage",
+                "coverage_branch",
+                "total_branch"
             ])
 
             writer.writerow([
@@ -308,6 +314,8 @@ def export_coverage_to_csv(project_path):
                 total_methods,
                 covered_methods,
                 line_coverage,
+                coverage_branch,
+                total_branch
             ])
 
         print(f"📄 Coverage CSV generated at: {csv_path}")
