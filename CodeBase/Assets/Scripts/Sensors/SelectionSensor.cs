@@ -34,7 +34,11 @@ public class SelectionSensor : AInUnityStepSensor
         IContext scenarioContext, 
         IContext sequenceContext)
         : base(@event, nameValueListMap, new ContextHolder(externalContext, scenarioContext, sequenceContext))
-    { }
+    {
+        
+
+     
+    }
 
 
 

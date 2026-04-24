@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="MyScenario" label="MyScenario" version="5.16.0.0" xmlns="http://www.insa-rennes.fr/Xareus.Scenarios">
+  <extendedInfo>
+    <unityEditor xmlns="">
+      <version>1.2</version>
+    </unityEditor>
+  </extendedInfo>
+  <sequence xsi:type="StateMachine" id="Root" label="Root">
+    <extendedInfo>
+      <unityEditor xmlns="">
+        <viewData x="0" y="0" zoom="1" />
+        <comments />
+        <sections />
+      </unityEditor>
+    </extendedInfo>
+    <sequence xsi:type="State" id="State_0" label="State_0">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="234" y="237" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <sequence xsi:type="State" id="State_1" label="State_1">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="790" y="221" />
+        </unityEditor>
+      </extendedInfo>
+    </sequence>
+    <transition xsi:type="SMTransition" id="Transition_0" label="Transition_0">
+      <extendedInfo>
+        <unityEditor xmlns="">
+          <position x="530" y="232" />
+        </unityEditor>
+      </extendedInfo>
+      <event id="Transition_0" label="Transition_0">
+        <sensorCheck classname="MoveArmSensor,Assembly-CSharp">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Arms to follow">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.ObjectDropField`1[[UnityEngine.GameObject,UnityEngine.CoreModule]],Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+            <param value="" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.String,mscorlib" name="Parameter">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="TrackPosition">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </sensorCheck>
+      </event>
+      <upstreamSequence idref="State_0" />
+      <downstreamSequence idref="State_1" />
+      <downstreamState idref="State_1" />
+    </transition>
+  </sequence>
+</scenario>
