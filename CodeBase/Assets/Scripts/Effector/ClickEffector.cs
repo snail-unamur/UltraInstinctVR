@@ -10,9 +10,11 @@ using System.Collections.Generic;
 public class ClickEffector : AUnityEffector
 {
     [ConfigurationParameter("gameObjectToObserve", Necessity.Required)]
-    private string gameObjectToObserveName;
+
+    protected GameObject gameObjectToObserve;
 
     [ConfigurationParameter("ControllerHand", Necessity.Required)]
+
     private string controllerHand; 
 
     [ConfigurationParameter("ButtonToSimulate", Necessity.Required)]
@@ -21,7 +23,6 @@ public class ClickEffector : AUnityEffector
     [ContextVariable("result", "The result of the operation")]
     protected ContextVariable<float> result;
 
-    private GameObject gameObjectToObserve;
     private InputDevice targetDevice;
 
     public ClickEffector(Xareus.Scenarios.Event @event,
@@ -35,7 +36,7 @@ public class ClickEffector : AUnityEffector
 
     public override void SafeReset()
     {
-        gameObjectToObserve = GameObject.Find(gameObjectToObserveName);
+        
 
         // Find the correct controller (Left or Right)
         InputDeviceCharacteristics characteristics = controllerHand == "Left"

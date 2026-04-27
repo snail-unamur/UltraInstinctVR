@@ -15,13 +15,12 @@ public class MoveControllerEffector : AUnityEffector
     int parameterInt;
 
     [ConfigurationParameter("gameObjectToObserve", Necessity.Required)]
-    private string gameObjectToObserveName;
+    public GameObject gameObjectToObserve;
 
     [ContextVariable("result", "The result of the operation")]
     protected ContextVariable<float> result;
 
     // --- Movement tracking ---
-    private GameObject gameObjectToObserve;
     private Vector3 lastPosition;
     private float movementThreshold = 0.001f;
     private bool isMoving = false;
@@ -37,18 +36,17 @@ public class MoveControllerEffector : AUnityEffector
         { }
     public override void SafeReset()
     {
-        // Find the GameObject by name from the configuration parameter
-        gameObjectToObserve = GameObject.Find(gameObjectToObserveName);
 
-        if (gameObjectToObserve != null)
+
+        if(gameObjectToObserve == null)
         {
-            lastPosition = gameObjectToObserve.transform.position;
-            Debug.Log($"[MoveController] Tracking object: {gameObjectToObserveName}");
+            Debug.LogWarning("[WARNING] : Controller not found");
         }
-        else
-        {
-            Debug.LogWarning($"[MoveController] GameObject '{gameObjectToObserveName}' not found!");
-        }
+
+        
+        lastPosition = gameObjectToObserve.transform.position;
+        Debug.Log($"[MoveController] Tracking object: {gameObjectToObserve}");
+    
     }
 
     public override void SafeEffectorUpdate()

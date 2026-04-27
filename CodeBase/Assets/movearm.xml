@@ -8,7 +8,7 @@
   <sequence xsi:type="StateMachine" id="Root" label="Root">
     <extendedInfo>
       <unityEditor xmlns="">
-        <viewData x="0" y="0" zoom="1" />
+        <viewData x="-150.317932" y="-106.787277" zoom="1.23999977" />
         <comments />
         <sections />
       </unityEditor>
@@ -16,21 +16,21 @@
     <sequence xsi:type="State" id="State_0" label="State_0">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="240" y="240" />
+          <position x="360" y="480" />
         </unityEditor>
       </extendedInfo>
     </sequence>
     <sequence xsi:type="State" id="State_1" label="State_1">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="790" y="221" />
+          <position x="1060" y="470.6452" />
         </unityEditor>
       </extendedInfo>
     </sequence>
     <transition xsi:type="SMTransition" id="Transition_0" label="Transition_0">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="530" y="232" />
+          <position x="700" y="469.838776" />
         </unityEditor>
       </extendedInfo>
       <event id="Transition_0" label="Transition_0">
@@ -84,7 +84,7 @@
             </unityEditor>
           </extendedInfo>
           <param type="Xareus.Scenarios.Variables.ContextVariable`1,Xareus.Scenarios" name="result" />
-          <param type="System.String,mscorlib" name="Parameter">
+          <param value="" type="System.String,mscorlib" name="Parameter">
             <extendedInfo>
               <unityEditor xmlns="">
                 <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
@@ -98,12 +98,13 @@
               </unityEditor>
             </extendedInfo>
           </param>
-          <param value="" type="System.String,mscorlib" name="gameObjectToObserve">
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="gameObjectToObserve">
             <extendedInfo>
               <unityEditor xmlns="">
-                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.ObjectDropField`1[[UnityEngine.GameObject,UnityEngine.CoreModule]],Xareus.Unity.Editor" />
               </unityEditor>
             </extendedInfo>
+            <param value="b858157d-6cf9-436d-9ff9-6b8a01db5ada" type="System.Guid,mscorlib" name="UFID" />
           </param>
         </effectorUpdate>
       </event>

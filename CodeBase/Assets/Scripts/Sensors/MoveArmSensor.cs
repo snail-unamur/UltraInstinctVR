@@ -16,7 +16,7 @@ public class MoveArmSensor : AInUnityStepSensor
     
     // A key that will be used in the EventContext
     [EventContextEntry()]
-    public static readonly string KEY = "key";
+    public static readonly string KEY = "ARM_Key";
 
     // A configuration parameter for the sensor that will be displayed
     // in the scenario inspector
@@ -41,7 +41,7 @@ public class MoveArmSensor : AInUnityStepSensor
     private Vector3 lastPosition;
 
     // Threshold to consider as "moving" (avoids floating point noise)
-    private float movementThreshold = 0.001f;
+    private float movementThreshold = 0.0f;
 
 
 
@@ -58,8 +58,6 @@ public class MoveArmSensor : AInUnityStepSensor
 
     public override void SafeReset()
     {
-        // Find the GameObject by name (or assign it another way)
-        targetObject = GameObject.Find("YourObjectName");
         
         if (targetObject != null)
             lastPosition = targetObject.transform.position;
@@ -78,7 +76,15 @@ public class MoveArmSensor : AInUnityStepSensor
 
         if (isMoving)
         {
-            eventContext.Add(KEY, distanceMoved.ToString());
+            
+            //Generate the key to the event context
+
+            string ArmKey = $"{KEY}_{Guid.NewGuid()}";
+
+
+            eventContext.Add(ArmKey, distanceMoved.ToString());
+
+            Debug.Log("Controller is moving");
         }
 
         // Update last position for next frame
