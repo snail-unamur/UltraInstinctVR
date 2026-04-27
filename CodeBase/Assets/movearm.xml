@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scenario xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="MyScenario" label="MyScenario" version="5.16.0.0" xmlns="http://www.insa-rennes.fr/Xareus.Scenarios">
   <extendedInfo>
-    <unityEditor xmlns="">
+    <unityEditor xmlns="" singleSceneUsage="False">
       <version>1.2</version>
     </unityEditor>
   </extendedInfo>
@@ -16,7 +16,7 @@
     <sequence xsi:type="State" id="State_0" label="State_0">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="234" y="237" />
+          <position x="240" y="240" />
         </unityEditor>
       </extendedInfo>
     </sequence>
@@ -35,13 +35,18 @@
       </extendedInfo>
       <event id="Transition_0" label="Transition_0">
         <sensorCheck classname="MoveArmSensor,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
           <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Arms to follow">
             <extendedInfo>
               <unityEditor xmlns="">
                 <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.ObjectDropField`1[[UnityEngine.GameObject,UnityEngine.CoreModule]],Xareus.Unity.Editor" />
               </unityEditor>
             </extendedInfo>
-            <param value="" type="System.Guid,mscorlib" name="UFID" />
+            <param value="b858157d-6cf9-436d-9ff9-6b8a01db5ada" type="System.Guid,mscorlib" name="UFID" />
           </param>
           <param type="System.String,mscorlib" name="Parameter">
             <extendedInfo>
@@ -57,11 +62,56 @@
               </unityEditor>
             </extendedInfo>
           </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SmoothPosition">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="ThrowSmoothDuration">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
         </sensorCheck>
+        <effectorUpdate classname="MoveControllerEffector,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
+          <param type="Xareus.Scenarios.Variables.ContextVariable`1,Xareus.Scenarios" name="result" />
+          <param type="System.String,mscorlib" name="Parameter">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="0" type="System.Int32,mscorlib" name="ParameterInt">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.IntField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="" type="System.String,mscorlib" name="gameObjectToObserve">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </effectorUpdate>
       </event>
       <upstreamSequence idref="State_0" />
       <downstreamSequence idref="State_1" />
       <downstreamState idref="State_1" />
     </transition>
+    <initialSequence idref="State_0" />
+    <finalSequence idref="State_1" />
   </sequence>
 </scenario>

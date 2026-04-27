@@ -15,7 +15,7 @@ public class MoveControllerEffector : AUnityEffector
     int parameterInt;
 
     [ConfigurationParameter("gameObjectToObserve", Necessity.Required)]
-    private string gameObjectToObserveName;  // ✅ Use a string name to find the object
+    private string gameObjectToObserveName;
 
     [ContextVariable("result", "The result of the operation")]
     protected ContextVariable<float> result;
@@ -64,7 +64,7 @@ public class MoveControllerEffector : AUnityEffector
         if (isMoving)
         {
             Debug.Log($"[MoveController] Object is moving! Distance: {distanceMoved}");
-            result.Set(distanceMoved);  // ✅ Store the distance moved as the result
+            result.Set(distanceMoved); 
         }
         else
         {

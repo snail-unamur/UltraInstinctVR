@@ -37,7 +37,7 @@
     <sequence xsi:type="Place" id="Place_3" label="Place_3">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="1155" y="196" />
+          <position x="1160" y="200" />
         </unityEditor>
       </extendedInfo>
     </sequence>
@@ -47,7 +47,79 @@
           <position x="227" y="196" />
         </unityEditor>
       </extendedInfo>
-      <event id="Transition_0" label="Transition_0" />
+      <event id="Transition_0" label="Transition_0">
+        <sensorCheck classname="MoveArmSensor,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
+          <param type="UnityEngine.GameObject,UnityEngine.CoreModule" name="Arms to follow">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.ObjectDropField`1[[UnityEngine.GameObject,UnityEngine.CoreModule]],Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+            <param value="" type="System.Guid,mscorlib" name="UFID" />
+          </param>
+          <param type="System.String,mscorlib" name="Parameter">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="TrackPosition">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="SmoothPosition">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="False" type="System.Boolean,mscorlib" name="ThrowSmoothDuration">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.BoolField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </sensorCheck>
+        <effectorUpdate classname="MoveControllerEffector,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
+          <param type="System.String,mscorlib" name="Parameter">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param value="0" type="System.Int32,mscorlib" name="ParameterInt">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.IntField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param type="System.String,mscorlib" name="gameObjectToObserve">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </effectorUpdate>
+      </event>
       <upstreamSequence idref="Place_0" />
       <downstreamSequence idref="Place_1" />
     </transition>
@@ -57,7 +129,36 @@
           <position x="517" y="194.5" />
         </unityEditor>
       </extendedInfo>
-      <event id="Transition_1" label="Transition_1" />
+      <event id="Transition_1" label="Transition_1">
+        <effectorUpdate classname="ClickEffector,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
+          <param type="System.String,mscorlib" name="gameObjectToObserve">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param type="System.String,mscorlib" name="ControllerHand">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param type="System.String,mscorlib" name="ButtonToSimulate">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </effectorUpdate>
+      </event>
       <upstreamSequence idref="Place_1" />
       <downstreamSequence idref="Place_2" />
     </transition>
@@ -67,7 +168,29 @@
           <position x="845.5" y="189" />
         </unityEditor>
       </extendedInfo>
-      <event id="Transition_2" label="Transition_2" />
+      <event id="Transition_2" label="Transition_2">
+        <effectorUpdate classname="UnclickEffector,Assembly-CSharp">
+          <extendedInfo>
+            <unityEditor xmlns="">
+              <editBox type="Xareus.Unity.Editor.Scenarios.UI.DefaultEditBox,Xareus.Unity.Editor" />
+            </unityEditor>
+          </extendedInfo>
+          <param type="System.String,mscorlib" name="ControllerHand">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+          <param type="System.String,mscorlib" name="ButtonToSimulate">
+            <extendedInfo>
+              <unityEditor xmlns="">
+                <field type="Xareus.Unity.Editor.Scenarios.UI.Fields.StringField,Xareus.Unity.Editor" />
+              </unityEditor>
+            </extendedInfo>
+          </param>
+        </effectorUpdate>
+      </event>
       <upstreamSequence idref="Place_2" />
       <downstreamSequence idref="Place_3" />
     </transition>
@@ -84,12 +207,13 @@
     <transition id="Transition_3" label="Transition_3">
       <extendedInfo>
         <unityEditor xmlns="">
-          <position x="740.5" y="298" />
+          <position x="740" y="300" />
         </unityEditor>
       </extendedInfo>
       <event id="Transition_3" label="Transition_3" />
       <upstreamSequence idref="Place_3" />
       <downstreamSequence idref="Place_1" />
     </transition>
+    <finalSequence idref="Place_3" />
   </sequence>
 </scenario>

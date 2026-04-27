@@ -26,11 +26,11 @@ public class MoveArmSensor : AInUnityStepSensor
     [ConfigurationParameter("TrackPosition", Necessity.Required)]
     protected bool TrackPosition;
     
-    [ConfigurationParameter("TrackPosition", Necessity.Required)]
+    [ConfigurationParameter("SmoothPosition", Necessity.Required)]
     protected bool SmoothPosition;
 
 
-    [ConfigurationParameter("TrackPosition", Necessity.Required)]
+    [ConfigurationParameter("ThrowSmoothDuration", Necessity.Required)]
     protected bool ThrowSmoothingDuration;
 
     // Also add all other parameters

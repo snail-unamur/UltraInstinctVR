@@ -472,18 +472,20 @@
       "url": "https://packages.unity.com"
     },
     "fr.inria.unity.tools": {
-      "version": "2.0.0",
+      "version": "2.0.1",
       "depth": 1,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://vrbooking.irisa.fr/npm"
     },
     "fr.insa.xareus": {
-      "version": "3.2.0",
+      "version": "3.4.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "fr.inria.unity.tools": "2.0.0",
+        "fr.inria.unity.tools": "2.0.1",
         "com.unity.editorcoroutines": "1.0.0",
         "com.unity.inputsystem": "1.8.1",
         "com.unity.settings-manager": "2.0.1",

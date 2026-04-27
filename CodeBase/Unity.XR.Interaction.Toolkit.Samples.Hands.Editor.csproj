@@ -547,7 +547,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity.Editor.Utils">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Editor\Utils\Xareus.Unity.Editor.Utils.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Editor\Utils\Xareus.Unity.Editor.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
@@ -559,7 +559,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity.Licensing">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Editor\Licensing\Xareus.Unity.Licensing.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Editor\Licensing\Xareus.Unity.Licensing.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
@@ -567,23 +567,23 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity.Editor">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Editor\Xareus.Unity.Editor.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Editor\Xareus.Unity.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Unity">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Scenarios\Xareus.Scenarios.Unity.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Scenarios\Xareus.Scenarios.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Xareus.Unity.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Xareus.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Relations">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Relations.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Relations.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity.References">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\References\Xareus.Unity.References.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\References\Xareus.Unity.References.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Hashing">
@@ -591,39 +591,39 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Network">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Scenarios.Network.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Scenarios.Network.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Scenarios.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Scenarios.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\log4net.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Unity.Edition">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Scenarios\Edition\Xareus.Scenarios.Unity.Edition.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Scenarios\Edition\Xareus.Scenarios.Unity.Edition.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Utils">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Utils.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Extra">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Scenarios.Extra.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Scenarios.Extra.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Unity.Constants">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Scenarios\Constants\Xareus.Scenarios.Unity.Constants.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Scenarios\Constants\Xareus.Scenarios.Unity.Constants.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Relations">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Scenarios.Relations.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Scenarios.Relations.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Relations.Extra">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Plugins\Xareus.Relations.Extra.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Plugins\Xareus.Relations.Extra.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -639,7 +639,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Relations.Scenarios.Unity">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Relations\Scenarios\Xareus.Relations.Scenarios.Unity.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Relations\Scenarios\Xareus.Relations.Scenarios.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
@@ -647,15 +647,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Scenarios.Unity.MiddleVR">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Scenarios\MiddleVR\Xareus.Scenarios.Unity.MiddleVR.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Scenarios\MiddleVR\Xareus.Scenarios.Unity.MiddleVR.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Unity.Utils">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Utils\Xareus.Unity.Utils.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Utils\Xareus.Unity.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Xareus.Relations.Unity">
-      <HintPath>Library\PackageCache\fr.insa.xareus@f7e910e7c558\Scripts\Relations\Xareus.Relations.Unity.dll</HintPath>
+      <HintPath>Library\PackageCache\fr.insa.xareus@48de43c2a1e3\Scripts\Relations\Xareus.Relations.Unity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1182,12 +1182,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
