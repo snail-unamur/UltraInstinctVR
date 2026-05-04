@@ -54,3 +54,9 @@ UnityCloudBuild/
 
 # Addressables auto files
 [Aa]ssets/[Ss]treamingAssets/Unity_*
+
+
+
+# ONNX model files
+*.onnx
+*.onnx.data
