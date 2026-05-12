@@ -35,8 +35,9 @@ It is compatible with any C# application and can be delivered as a Unity package
 
 ## How to install and run UltraInstinctVR?
 - Import the package
+- Create a Test Launcher in the folder Test (Documentation is here : https://docs.unity3d.com/Packages/com.unity.test-framework@1.1/manual/workflow-create-test.html)
 - Import TestManager into the gameObjects hierachy
-- Assign the good gameobject to the Xareus scenario repsenting the oracle as petri-nets
+- Assign the good gameobject to the Xareus scenario repsenting the oracle as petri-nets in the scenario editor
 - Launch the unity scene and wait the test suite to be terminated
 
 ---
