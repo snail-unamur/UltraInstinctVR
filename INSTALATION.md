@@ -35,7 +35,7 @@ It is compatible with any C# application and can be delivered as a Unity package
 
 ## How to install and run UltraInstinctVR?
 - Import the package
-- Import Zeno 3 into the gameObjects hierachy
+- Import TestManager into the gameObjects hierachy
 - Assign the good gameobject to the Xareus scenario repsenting the oracle as petri-nets
 - Launch the unity scene and wait the test suite to be terminated
 
@@ -117,7 +117,7 @@ Unlike traditional assertions at the end of test cases, oracles in VR are contin
 | Name      | Description |Scenario file
 |-----------|-------------|------------------------------------------------------------------------------------------| 
 | **Test Manager**     | Manages and controls subcomponents; responsible for launching each component independently. | / |
-| **ScanInteractableObjec**   | Scans the Unity scene and identifies interactable objects. The scan stops once no more objects are found. | / |
+| **ScanInteractableObject**   | Scans the Unity scene and identifies interactable objects. The scan stops once no more objects are found. | / |
 | **Simple Teleportation**     | Attempts to teleport within the scene. The oracle passes if successful. | Oracle_Teleportation.xml |
 | **Teleportation Outside scene**    | Attempts to teleport outside the scene. The oracle fails if teleportation is successful. | Oracle_OutSceneTeleportation.xml |
 | **Teleport in interactable Object**    | Attempts to teleport into another GameObject. The oracle fails if successful. | Oracle_InObjectScene.xml |
@@ -146,3 +146,4 @@ Unlike traditional assertions at the end of test cases, oracles in VR are contin
 |`UltraInstinct_V2022.3_experimentVersionV1.2.unitypackage` | it's the version for benchmarking purposes against other automated VR testing tool for Unity 2022.X |
 
 |`UltraInstinct_experimentVersion_6V1.0.unitypackage` | it's the version for benchmarking purposes against other automated VR testing tool for Unity6 |
+|`UltraInstinctVR_Package_ASE26.unitypackage` | it's the version for the ASE26 demo tool|
