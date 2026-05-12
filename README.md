@@ -10,7 +10,7 @@
 It contains two directories, the first one *Unity_package* contains the unity package of different versions of **UltraInstinctVR** such that the expriment version to perform benchmark and the ready use version for Unity6
 and a readme explaining the diffrent testing framework features and a guide to install it.
 
-**NOTE: The version for ASE26 is in the main folder and named : UltraInstinctVR_Package_ASE26.unitypackage**
+**NOTE: The version for ASE26 tool demo is in the main folder and named : UltraInstinctVR_Package_ASE26.unitypackage**
 
 The second *`/CodeBase`* contains C# script to generate interactions,verify oracles under sensor and effector and Xareus scenario definition in XML.
 
